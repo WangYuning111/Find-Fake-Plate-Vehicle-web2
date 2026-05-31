@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>套牌车智能稽查系统 - V1.0</title>
+    <meta name="description" content="基于深度学习的套牌车智能检测平台">
+    <meta name="author" content="AI Team">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+    
+    <style>
+        /* 全局样式 */
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        /* 头部样式 */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        /* 步骤卡片 */
+        .step-card {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+        }
+        
+        .step-card.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            color: white;
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 auto;
+        }
+        
+        .step-card.active .step-number {
+            background: white;
+            color: #667eea;
+        }
+        
+        /* 拖拽上传区域 */
+        .drop-zone {
+            border: 3px dashed #dee2e6;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+        
+        .drop-zone:hover, .drop-zone.dragover {
+            border-color: #667eea;
+            background: #e7ebff;
+        }
+        
+        .drop-zone-content i {
+            font-size: 3rem;
+            color: #667eea;
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        /* 图片预览 */
+        .preview-container {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .preview-container img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: contain;
+        }
+        
+        /* 结果展示 */
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .result-label {
+            font-weight: 500;
+            color: #6c757d;
+        }
+        
+        .result-value {
+            font-weight: 600;
+            color: #212529;
+        }
+        
+        .result-image-wrapper {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* 空状态 */
+        .empty-state {
+            color: #adb5bd;
+        }
+        
+        .empty-state i {
+            font-size: 4rem;
+        }
+        
+        /* 卡片样式 */
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            border-bottom: none;
+            padding: 1rem 1.5rem;
+        }
+        
+        /* 按钮样式 */
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            padding: 12px 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-primary:disabled {
+            background: #6c757d;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        /* 动画 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .result-container {
+            animation: fadeIn 0.5s ease;
+        }
+        
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .drop-zone {
+                padding: 1.5rem;
+            }
+            
+            .step-card {
+                margin-bottom: 1rem;
+            }
+        }
+        
+        /* 页脚 */
+        footer {
+            margin-top: 3rem;
+            padding: 2rem 0;
+            text-align: center;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2 text-center text-md-start mb-3 mb-md-0">
+                    <i class="bi bi-shield-check" style="font-size: 3rem;"></i>
+                </div>
+                <div class="col-md-8 text-center">
+                    <h1 class="mb-2">套牌车智能稽查系统</h1>
+                    <p class="mb-0 opacity-75">基于 YOLOv12 + 深度学习的车辆识别与套牌检测平台</p>
+                </div>
+                <div class="col-md-2 text-center text-md-end">
+                    <span class="badge bg-success">V1.0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主内容 -->
+    <main class="container mb-5">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2024 套牌车智能稽查系统 | 基于深度学习技术</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

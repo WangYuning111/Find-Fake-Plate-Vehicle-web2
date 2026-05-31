@@ -1,0 +1,15 @@
+flask
+werkzeug
+opencv-python
+pandas
+torch
+torchvision
+ultralytics
+hyperlpr
+numpy
+Pillow
+huggingface_hub
+imutils
+tqdm
+psutil
+

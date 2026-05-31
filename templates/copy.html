@@ -1,0 +1,41 @@
+<script>
+    
+    var canvas2d = document.getElementById("_canvas");
+    canvas2d = canvas2d.getContext("2d");
+    img = new Image();          
+    img.src = "test.jpg";
+    img.onload = function() {
+    canvas2d.drawImage(img, 0, 0);
+        }
+    
+ 
+  
+    //绿线来回扫描
+    var be_y = 1;
+    canvas2d.lineWidth = 2;
+    var add = 2;
+    function saomiao()
+       {
+        
+        canvas2d.drawImage(img, 0, 0);
+       
+        canvas2d.fillStyle = "rgba(128, 128, 128, 0.1)";
+        canvas2d.fillRect(0,0,400,320);
+    
+        canvas2d.strokeStyle = "green";
+        canvas2d.beginPath();
+        canvas2d.moveTo(0,be_y);
+        canvas2d.lineTo(400,320);
+        be_y += add;
+        canvas2d.stroke();
+        if(be_y > c_h)
+           add = 0 - add;
+     
+        if(be_y < 0)
+           add = Math.abs(add);
+    }
+    
+    setInterval(saomiao,1);
+    };
+    
+</script>

@@ -1,0 +1,41 @@
+﻿<body>
+<div>
+<canvas id="_canvas" width="700" height="500">
+</canvas>
+</div>
+<script>
+window.onload =function(){
+var canvas2d = document.getElementById("_canvas");
+var c_w = canvas2d.width;
+var c_h = canvas2d.height;
+canvas2d = canvas2d.getContext("2d");
+
+
+//红线来回扫描
+    var be_y = 1;
+    canvas2d.lineWidth = 2;
+    var add = 2;
+function saomiao()
+   {
+    canvas2d.clearRect(0,0,c_w,c_h);
+   
+    canvas2d.fillStyle = "rgba(128, 128, 128, 0.2)";
+    canvas2d.fillRect(0,0,c_w,c_h);
+
+    canvas2d.strokeStyle = "green";
+    canvas2d.beginPath();
+    canvas2d.moveTo(0,be_y);
+    canvas2d.lineTo(c_w,be_y);
+    be_y += add;
+    canvas2d.stroke();
+    if(be_y > c_h)
+       add = 0 - add;
+ 
+    if(be_y < 0)
+       add = Math.abs(add);
+}
+
+setInterval(saomiao,1);
+};
+</script>
+</body>
