@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block title %}识别历史 - 套牌车智能稽查系统{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h3><i class="bi bi-clock-history"></i> 识别历史记录</h3>
+    <span class="text-muted">共 {{ total }} 条记录</span>
+</div>
+
+<div class="card shadow-sm">
+    <div class="table-responsive">
+        <table class="table table-hover mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th>ID</th>
+                    <th>结果图</th>
+                    <th>车牌号</th>
+                    <th>品牌</th>
+                    <th>类型</th>
+                    <th>颜色</th>
+                    <th>判定</th>
+                    <th>置信度</th>
+                    <th>时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in records %}
+                <tr>
+                    <td>{{ r.id }}</td>
+                    <td>
+                        {% if r.result_image %}
+                        <img src="/{{ r.result_image.replace('\\', '/') }}" style="height: 60px; border-radius: 6px; object-fit: cover;" alt="结果">
+                        {% else %}
+                        <span class="text-muted">-</span>
+                        {% endif %}
+                    </td>
+                    <td><code>{{ r.plate_number or '未知' }}</code></td>
+                    <td>{{ r.vehicle_brand or '未知' }}</td>
+                    <td>{{ r.vehicle_type or '未知' }}</td>
+                    <td>{{ r.vehicle_color or '未知' }}</td>
+                    <td>
+                        {% if r.is_fake %}
+                        <span class="badge badge-fake">套牌车</span>
+                        {% else %}
+                        <span class="badge badge-normal">正常</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ "%.1f"|format((r.confidence or 0) * 100) }}%</td>
+                    <td><small class="text-muted">{{ r.created_at }}</small></td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="9" class="text-center py-5 text-muted">
+                        <i class="bi bi-inbox fs-1"></i>
+                        <p class="mt-2">暂无识别记录</p>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 分页 -->
+    {% if total_pages > 1 %}
+    <div class="card-footer d-flex justify-content-center">
+        <nav>
+            <ul class="pagination mb-0">
+                <li class="page-item {% if page <= 1 %}disabled{% endif %}">
+                    <a class="page-link" href="/history?page={{ page - 1 }}">上一页</a>
+                </li>
+                {% for p in range(1, total_pages + 1) %}
+                <li class="page-item {% if p == page %}active{% endif %}">
+                    <a class="page-link" href="/history?page={{ p }}">{{ p }}</a>
+                </li>
+                {% endfor %}
+                <li class="page-item {% if page >= total_pages %}disabled{% endif %}">
+                    <a class="page-link" href="/history?page={{ page + 1 }}">下一页</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

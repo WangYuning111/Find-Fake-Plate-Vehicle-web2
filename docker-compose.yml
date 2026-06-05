@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  fake-plate-app:
+    build: .
+    image: fake-plate-detection:latest
+    container_name: fake-plate-web
+    ports:
+      - "8090:8090"
+    volumes:
+      - ./data:/app/data
+      - ./static/uploads:/app/static/uploads
+      - ./static/results:/app/static/results
+      - ./vehicle-database.csv:/app/vehicle-database.csv
+    environment:
+      - FLASK_DEBUG=False
+      - PORT=8090
+      - HOST=0.0.0.0
+      - TORCH_DEVICE=cpu
+    restart: unless-stopped

@@ -5,13 +5,6 @@ __pycache__/
 *.so
 .Python
 
-# 第三方库（可通过 requirements.txt 安装）
-ultralytics/
-
-# 模型权重文件（体积大，GitHub 不适合存）
-cfg/*.pt
-cfg/*.pth
-
 # 日志文件
 *.log
 server_output.log

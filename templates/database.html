@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+{% block title %}车辆数据库 - 套牌车智能稽查系统{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h3><i class="bi bi-database"></i> 车辆数据库管理</h3>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+        <i class="bi bi-plus-lg"></i> 添加车辆
+    </button>
+</div>
+
+<!-- 搜索栏 -->
+<div class="card shadow-sm mb-4">
+    <div class="card-body">
+        <form class="row g-3" method="get" action="/database">
+            <div class="col-md-8">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input type="text" name="search" class="form-control" placeholder="搜索车牌号或品牌..." value="{{ search }}">
+                    <button class="btn btn-outline-primary" type="submit">搜索</button>
+                </div>
+            </div>
+            <div class="col-md-4 text-end">
+                <span class="text-muted">共 {{ total }} 条记录</span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- 车辆列表 -->
+<div class="card shadow-sm">
+    <div class="table-responsive">
+        <table class="table table-hover mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th>ID</th>
+                    <th>车牌号</th>
+                    <th>品牌</th>
+                    <th>类型</th>
+                    <th>车主</th>
+                    <th>登记日期</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for v in vehicles %}
+                <tr>
+                    <td>{{ v.id }}</td>
+                    <td><code class="fs-6">{{ v.plate_no }}</code></td>
+                    <td>{{ v.car_brand }}</td>
+                    <td>{{ v.car_type or '-' }}</td>
+                    <td>{{ v.owner_name or '-' }}</td>
+                    <td>{{ v.registration_date or '-' }}</td>
+                    <td>
+                        <span class="badge {% if v.status == '正常' %}bg-success{% else %}bg-secondary{% endif %}">
+                            {{ v.status }}
+                        </span>
+                    </td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-primary" onclick="editVehicle('{{ v.plate_no }}', '{{ v.car_brand }}', '{{ v.car_type or '' }}', '{{ v.owner_name or '' }}', '{{ v.registration_date or '' }}', '{{ v.status }}')">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        <button class="btn btn-sm btn-outline-danger" onclick="deleteVehicle('{{ v.plate_no }}')">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="8" class="text-center py-5 text-muted">
+                        <i class="bi bi-inbox fs-1"></i>
+                        <p class="mt-2">暂无车辆记录</p>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    {% if total_pages > 1 %}
+    <div class="card-footer d-flex justify-content-center">
+        <nav>
+            <ul class="pagination mb-0">
+                <li class="page-item {% if page <= 1 %}disabled{% endif %}">
+                    <a class="page-link" href="/database?page={{ page - 1 }}{% if search %}&search={{ search }}{% endif %}">上一页</a>
+                </li>
+                {% for p in range(1, total_pages + 1) %}
+                <li class="page-item {% if p == page %}active{% endif %}">
+                    <a class="page-link" href="/database?page={{ p }}{% if search %}&search={{ search }}{% endif %}">{{ p }}</a>
+                </li>
+                {% endfor %}
+                <li class="page-item {% if page >= total_pages %}disabled{% endif %}">
+                    <a class="page-link" href="/database?page={{ page + 1 }}{% if search %}&search={{ search }}{% endif %}">下一页</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    {% endif %}
+</div>
+
+<!-- 添加车辆 Modal -->
+<div class="modal fade" id="addModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">添加车辆信息</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addForm">
+                    <div class="mb-3">
+                        <label class="form-label">车牌号 <span class="text-danger">*</span></label>
+                        <input type="text" name="plate_no" class="form-control" placeholder="如: 鲁B12345" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">车辆品牌 <span class="text-danger">*</span></label>
+                        <input type="text" name="car_brand" class="form-control" placeholder="如: 大众" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">车辆类型</label>
+                        <input type="text" name="car_type" class="form-control" placeholder="如: 家用车">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">车主姓名</label>
+                        <input type="text" name="owner_name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">登记日期</label>
+                        <input type="date" name="registration_date" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" onclick="submitAdd()">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 编辑车辆 Modal -->
+<div class="modal fade" id="editModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">编辑车辆信息</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editForm">
+                    <input type="hidden" name="plate_no">
+                    <div class="mb-3">
+                        <label class="form-label">车辆品牌</label>
+                        <input type="text" name="car_brand" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">车辆类型</label>
+                        <input type="text" name="car_type" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">车主姓名</label>
+                        <input type="text" name="owner_name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">登记日期</label>
+                        <input type="date" name="registration_date" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">状态</label>
+                        <select name="status" class="form-select">
+                            <option value="正常">正常</option>
+                            <option value="注销">注销</option>
+                            <option value="查封">查封</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" onclick="submitEdit()">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function submitAdd() {
+    const form = document.getElementById('addForm');
+    const data = Object.fromEntries(new FormData(form));
+    fetch('/api/vehicles', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    }).then(r => r.json()).then(res => {
+        if (res.success) { location.reload(); }
+        else { alert(res.error); }
+    });
+}
+
+function editVehicle(plate, brand, type, owner, date, status) {
+    const form = document.getElementById('editForm');
+    form.plate_no.value = plate;
+    form.car_brand.value = brand;
+    form.car_type.value = type;
+    form.owner_name.value = owner;
+    form.registration_date.value = date;
+    form.status.value = status;
+    new bootstrap.Modal(document.getElementById('editModal')).show();
+}
+
+function submitEdit() {
+    const form = document.getElementById('editForm');
+    const plate = form.plate_no.value;
+    const data = {
+        car_brand: form.car_brand.value,
+        car_type: form.car_type.value,
+        owner_name: form.owner_name.value,
+        registration_date: form.registration_date.value,
+        status: form.status.value
+    };
+    fetch(`/api/vehicles/${plate}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    }).then(r => r.json()).then(res => {
+        if (res.success) { location.reload(); }
+        else { alert(res.error); }
+    });
+}
+
+function deleteVehicle(plate) {
+    if (!confirm(`确定要删除车牌 ${plate} 的信息吗？`)) return;
+    fetch(`/api/vehicles/${plate}`, { method: 'DELETE' })
+        .then(r => r.json()).then(res => {
+            if (res.success) { location.reload(); }
+            else { alert(res.error); }
+        });
+}
+</script>
+{% endblock %}
