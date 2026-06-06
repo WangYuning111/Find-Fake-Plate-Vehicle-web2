@@ -1,0 +1,5665 @@
+[
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\1002.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\1003.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\1005.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\1011.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\1015.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\14.jpg",
+    "true_label": "black",
+    "predicted": "blue",
+    "correct": false,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\15.jpg",
+    "true_label": "black",
+    "predicted": "blue",
+    "correct": false,
+    "confidence": 0.24
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\150.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\162.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\165.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\172.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\180.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\185.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\207.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\216.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\217.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\218.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\237.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\238.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\239.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\247.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\253.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\264.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\265.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\276.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\28.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2736
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\284.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\289.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\31.jpg",
+    "true_label": "black",
+    "predicted": "blue",
+    "correct": false,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\32.jpg",
+    "true_label": "black",
+    "predicted": "blue",
+    "correct": false,
+    "confidence": 0.2223
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\37.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\394.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\40.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\402.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\407.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\411.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\412.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\416.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\425.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\430.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\45.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\48.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2791
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\55.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\586.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\591.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\60.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\61.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2738
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\616.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\617.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\625.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\63.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\637.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2795
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\685.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\699.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.279
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\71.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\724.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\732.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\735.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\739.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\741.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\742.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\747.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\757.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\765.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\901.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\912.jpg",
+    "true_label": "black",
+    "predicted": "blue",
+    "correct": false,
+    "confidence": 0.213
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\920.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\933.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\935.jpg",
+    "true_label": "black",
+    "predicted": "black",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\987.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\black\\989.jpg",
+    "true_label": "black",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1013.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1017.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1021.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1041.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\11.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1122.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1131.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1235.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1236.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1274.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\128.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1293.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1308.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1346.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\138.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1436.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1451.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1458.jpg",
+    "true_label": "blue",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1537.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\155.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\16.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1615.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1682.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\173.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1738.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1767.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\178.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1793.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\181.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2793
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1823.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\1907.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\193.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\199.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\2006.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\201.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\202.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\2033.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\227.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\229.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\233.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\243.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\291.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\292.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\305.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\315.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\326.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\352.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\369.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\376.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\414.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\418.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\43.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\475.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\479.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2682
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\494.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\538.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\539.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\559.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\574.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\656.jpg",
+    "true_label": "blue",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\67.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\698.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\720.jpg",
+    "true_label": "blue",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\749.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\774.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\775.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\889.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\917.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\blue\\938.jpg",
+    "true_label": "blue",
+    "predicted": "blue",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1080.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\110.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\116.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1163.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1182.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1243.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2795
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1352.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2767
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1381.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\154.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2789
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1604.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1735.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1736.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1819.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.279
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1855.jpg",
+    "true_label": "brown",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1875.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2787
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\1927.jpg",
+    "true_label": "brown",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\248.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\261.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\2679.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\2745.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\2754.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\2770.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2644
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\2783.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2793
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\2803.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\2843.jpg",
+    "true_label": "brown",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\2876.jpg",
+    "true_label": "brown",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3015.jpg",
+    "true_label": "brown",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3042.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3184.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2768
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3220.jpg",
+    "true_label": "brown",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3277.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2788
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3325.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2793
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3327.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2792
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\337.jpg",
+    "true_label": "brown",
+    "predicted": "black",
+    "correct": false,
+    "confidence": 0.1862
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3382.jpg",
+    "true_label": "brown",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\339.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3407.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3450.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3478.jpg",
+    "true_label": "brown",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3525.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3549.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2784
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\3810.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2786
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\512.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2764
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\540.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\595.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\622.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\661.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\678.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2779
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\680.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\682.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2788
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\762.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\797.jpg",
+    "true_label": "brown",
+    "predicted": "black",
+    "correct": false,
+    "confidence": 0.2566
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\817.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2794
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\858.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2145
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\879.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\953.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\970.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\brown\\984.jpg",
+    "true_label": "brown",
+    "predicted": "brown",
+    "correct": true,
+    "confidence": 0.2795
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1033.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1088.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1125.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1143.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1167.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1208.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1239.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1408.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2786
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\157.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\161.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1795.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1797.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1820.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1831.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1926.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1982.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\1993.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2018.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\205.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2060.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2062.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2083.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\210.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2110.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2111.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2119.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2124.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2126.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2153.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2175.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2177.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2268.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\2303.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\271.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\29.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\297.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\302.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\334.jpg",
+    "true_label": "green",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\342.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\346.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\35.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\381.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\39.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\445.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\446.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\466.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\478.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\520.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\577.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\578.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\598.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\629.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\636.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\715.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\green\\932.jpg",
+    "true_label": "green",
+    "predicted": "green",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1012.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1014.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1037.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1082.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1092.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1093.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1102.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1106.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\112.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1127.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1170.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1190.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\124.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1251.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\1269.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\133.jpg",
+    "true_label": "red",
+    "predicted": "white",
+    "correct": false,
+    "confidence": 0.2787
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\18.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\187.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2795
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\194.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\203.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\212.jpg",
+    "true_label": "red",
+    "predicted": "yellow",
+    "correct": false,
+    "confidence": 0.255
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\214.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\220.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\223.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\24.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\240.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\293.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\308.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\312.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\323.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\36.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\380.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\385.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2782
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\399.jpg",
+    "true_label": "red",
+    "predicted": "brown",
+    "correct": false,
+    "confidence": 0.2092
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\433.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\436.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\468.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\470.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2478
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\477.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\493.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\529.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\53.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\568.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2795
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\570.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2707
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\58.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\585.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\59.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\639.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\649.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\65.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\667.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\684.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2745
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\708.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\723.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\753.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\788.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\801.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\829.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\830.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\831.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\842.jpg",
+    "true_label": "red",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\red\\94.jpg",
+    "true_label": "red",
+    "predicted": "red",
+    "correct": true,
+    "confidence": 0.2794
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\1024.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\1089.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\1129.jpg",
+    "true_label": "silver",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\1248.jpg",
+    "true_label": "silver",
+    "predicted": "white",
+    "correct": false,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\131.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2783
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\1349.jpg",
+    "true_label": "silver",
+    "predicted": "white",
+    "correct": false,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\1681.jpg",
+    "true_label": "silver",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\1796.jpg",
+    "true_label": "silver",
+    "predicted": "white",
+    "correct": false,
+    "confidence": 0.2459
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\182.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\184.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\2019.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2784
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\2021.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2607
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\2022.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2788
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\2026.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.251
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\221.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\251.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\267.jpg",
+    "true_label": "silver",
+    "predicted": "white",
+    "correct": false,
+    "confidence": 0.2636
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\290.jpg",
+    "true_label": "silver",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\33.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2782
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\34.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2295
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3415.jpg",
+    "true_label": "silver",
+    "predicted": "white",
+    "correct": false,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3428.jpg",
+    "true_label": "silver",
+    "predicted": "white",
+    "correct": false,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3433.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2702
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3434.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3435.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3475.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3491.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2573
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3510.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2793
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3533.jpg",
+    "true_label": "silver",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3538.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3539.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3540.jpg",
+    "true_label": "silver",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3567.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2177
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3601.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2742
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3637.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3642.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3680.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3708.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3720.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\377.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\378.jpg",
+    "true_label": "silver",
+    "predicted": "white",
+    "correct": false,
+    "confidence": 0.1797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\379.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2776
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3818.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\382.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\3831.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\422.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2795
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\447.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\450.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2246
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\599.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.248
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\674.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2793
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\870.jpg",
+    "true_label": "silver",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\872.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2757
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\silver\\936.jpg",
+    "true_label": "silver",
+    "predicted": "silver",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\1.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2793
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\109.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\123.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\126.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\127.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\132.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\137.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\140.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\148.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\151.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\152.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\166.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\174.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\175.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\211.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\213.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2785
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\236.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\254.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\256.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\257.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\267.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2636
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\269.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\270.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\277.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\278.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2053
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\286.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\287.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\294.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\306.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\317.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\321.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\322.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\324.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\331.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\340.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\341.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2795
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\343.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\347.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\348.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\44.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\54.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\596.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\600.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\603.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\604.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\605.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\688.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\689.jpg",
+    "true_label": "white",
+    "predicted": "silver",
+    "correct": false,
+    "confidence": 0.2616
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\69.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\700.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\704.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\705.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\706.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\707.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\711.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\713.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\721.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\781.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\783.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\784.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\8.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\806.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\81.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\82.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\9.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\910.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\919.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\92.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\929.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\93.jpg",
+    "true_label": "white",
+    "predicted": "white",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\white\\930.jpg",
+    "true_label": "white",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\1195.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\1931.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\2146.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\2281.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\2566.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\2611.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\2646.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2766
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\2790.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\2893.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\30.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\3210.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\3344.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\3372.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\3422.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\3777.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\628.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\796.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_0.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_1.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_10.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_11.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_12.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_13.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_14.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_15.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_16.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_2.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2794
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_3.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_4.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_5.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_6.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2775
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_7.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_8.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Hor_9.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_0.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_1.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_10.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_11.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_12.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_13.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_14.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_15.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_16.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_2.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_3.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_4.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_5.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_6.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_7.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_8.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Flip_Vec_9.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_0.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_1.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_10.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_11.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_12.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_13.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_14.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_15.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_16.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_2.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_3.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_4.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_5.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_6.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_7.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_8.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Rotation_9.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_0.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2795
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_1.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_10.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_11.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_12.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_13.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_14.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_15.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_16.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2796
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_2.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2755
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_3.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_4.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_5.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_6.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2739
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_7.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2793
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_8.jpg",
+    "true_label": "yellow",
+    "predicted": "yellow",
+    "correct": true,
+    "confidence": 0.2797
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\yellow\\Shift_9.jpg",
+    "true_label": "yellow",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\1168.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\1235.jpg",
+    "true_label": "bus",
+    "predicted": "truck",
+    "correct": false,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\1268.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\1637.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\1638.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\1884.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\1893.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\1991.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\200.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2077.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2079.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2081.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2204.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2219.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2347.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.3547
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2389.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2400.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4749
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2412.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2467.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2535.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2557.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2558.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4753
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2561.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2597.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2598.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2628.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2669.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2692.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2721.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2737.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2740.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2757.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2775.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2782.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2795.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2806.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2808.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2820.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4723
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2884.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2897.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4426
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2901.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2905.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2964.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2965.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\2973.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4748
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3009.jpg",
+    "true_label": "bus",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3043.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3066.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3069.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3070.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3100.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3111.jpg",
+    "true_label": "bus",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3126.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3172.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3185.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4318
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3189.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3214.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3215.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3231.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3232.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4752
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3245.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3271.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3298.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3440.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3457.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3458.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3467.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3493.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3513.jpg",
+    "true_label": "bus",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3514.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3544.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3545.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3562.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3638.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3681.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3758.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3773.jpg",
+    "true_label": "bus",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3778.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\3779.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\479.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\729.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\768.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\862.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\bus\\992.jpg",
+    "true_label": "bus",
+    "predicted": "bus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\11.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\155.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\157.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\16.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4752
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\160.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\161.jpg",
+    "true_label": "car",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\162.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\164.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\175.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\176.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\182.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\19.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\2.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\205.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\208.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\210.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\216.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\223.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\224.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\244.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\246.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\25.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\256.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\259.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\260.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\3.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\326.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\334.jpg",
+    "true_label": "car",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\337.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\342.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\344.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\346.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\349.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\362.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\364.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\365.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\366.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\387.jpg",
+    "true_label": "car",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\389.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\390.jpg",
+    "true_label": "car",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\393.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\396.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\4.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\401.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4739
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\405.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\407.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\410.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\411.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\413.jpg",
+    "true_label": "car",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\414.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\423.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\426.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\428.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\433.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\436.jpg",
+    "true_label": "car",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\444.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\445.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\446.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\48.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\508.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\512.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\514.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\515.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\517.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\518.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\52.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\6.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\60.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\62.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\car\\7.jpg",
+    "true_label": "car",
+    "predicted": "car",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1001.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1079.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1087.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1121.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1134.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\115.jpg",
+    "true_label": "minibus",
+    "predicted": "car",
+    "correct": false,
+    "confidence": 0.3419
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\116.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4753
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1160.jpg",
+    "true_label": "minibus",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\117.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1172.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1204.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\121.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1213.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1222.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4729
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1223.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1278.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1287.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1291.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1335.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1343.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1349.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1374.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1388.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1413.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1417.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1418.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1450.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1459.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1496.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1549.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1551.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1558.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1569.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1570.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\1580.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\171.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4724
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\20.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4753
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\340.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\341.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\543.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\627.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\648.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\681.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\689.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\711.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\725.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\760.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\766.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\793.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\805.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\806.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\837.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4751
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\849.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\857.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\864.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\892.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\926.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\952.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\958.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\963.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\minibus\\973.jpg",
+    "true_label": "minibus",
+    "predicted": "minibus",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1036.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1066.jpg",
+    "true_label": "truck",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1073.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1078.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1111.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1119.jpg",
+    "true_label": "truck",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1122.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\12.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1235.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1236.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1266.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1280.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1301.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1307.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1323.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1324.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1336.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1338.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.458
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1339.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1354.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1363.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1512.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1520.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1530.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1577.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1578.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1650.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1657.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1758.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1784.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\186.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\190.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\191.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4717
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1940.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\1941.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\196.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\21.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\219.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\2220.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\26.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4735
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\291.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\298.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\3187.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\3257.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\3282.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\3296.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\332.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\3332.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\3350.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\347.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\370.jpg",
+    "true_label": "truck",
+    "predicted": "car",
+    "correct": false,
+    "confidence": 0.475
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\382.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\484.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4753
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\506.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\542.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\580.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\626.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\73.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\74.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\75.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\76.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\77.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4753
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\78.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\79.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4753
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\796.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\80.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\804.jpg",
+    "true_label": "truck",
+    "predicted": "NO_VEHICLE",
+    "correct": false,
+    "confidence": 0.0
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\81.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  },
+  {
+    "file": "C:\\Users\\13043\\Desktop\\FindFakePlateVehicle-web\\images\\truck\\89.jpg",
+    "true_label": "truck",
+    "predicted": "truck",
+    "correct": true,
+    "confidence": 0.4754
+  }
+]

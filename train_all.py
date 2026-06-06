@@ -65,7 +65,12 @@ class VehicleDataset(Dataset):
 
         if self.augment:
             # 对重点类别增加更多增强变体
-            num_variants = 4 if label in ['brown', 'bus'] else 2
+            if label in ['white', 'silver']:
+                num_variants = 6
+            elif label in ['brown', 'red', 'bus']:
+                num_variants = 5
+            else:
+                num_variants = 2
             aug_imgs = augment_image(img, num_variants=num_variants)
             img = aug_imgs[-1] if len(aug_imgs) > 1 else img
 
@@ -199,27 +204,20 @@ def train_model(task, image_paths, labels, classes, epochs=50, batch_size=16, lr
     # 对重点改进类别增加额外权重
     if task == 'color':
         class_weights['brown'] = class_weights.get('brown', 1.0) * 3.0  # brown 重点加强
-        class_weights['silver'] = class_weights.get('silver', 1.0) * 4.0  # silver 重点加强
-        class_weights['white'] = class_weights.get('white', 1.0) * 2.0  # white 加强区分
+        class_weights['red'] = class_weights.get('red', 1.0) * 2.5  # red 加强
+        class_weights['silver'] = class_weights.get('silver', 1.0) * 1.5
+        class_weights['white'] = class_weights.get('white', 1.0) * 2.0
         class_weights['blue'] = class_weights.get('blue', 1.0) * 1.5
     elif task == 'type':
         class_weights['bus'] = class_weights.get('bus', 1.0) * 2.0  # bus 重点加强
     
     print(f"[TRAIN] 类别权重: {class_weights}")
     
-    # 为每个样本分配权重
-    sample_weights = [class_weights.get(l, 1.0) for l in train_labels]
-    sampler = torch.utils.data.WeightedRandomSampler(
-        weights=sample_weights, 
-        num_samples=len(sample_weights),
-        replacement=True
-    )
-
     # 数据集
     train_dataset = VehicleDataset(train_paths, train_labels, classes, augment=True)
     val_dataset = VehicleDataset(val_paths, val_labels, classes, augment=False)
 
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, sampler=sampler, num_workers=0)
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=0)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=0)
 
     # 模型
@@ -245,11 +243,11 @@ def train_model(task, image_paths, labels, classes, epochs=50, batch_size=16, lr
         except Exception as e:
             print(f"[TRAIN] 预训练权重加载失败: {e}，将从头训练")
 
-    # 使用类别权重构建损失函数
+    # 使用类别权重构建损失函数（仅用于损失计算，不改变采样）
     weight_tensor = torch.tensor([class_weights.get(c, 1.0) for c in classes], dtype=torch.float32).to(DEVICE)
-    criterion = nn.CrossEntropyLoss(weight=weight_tensor, label_smoothing=0.1)
-    optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=1e-4)
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=5)
+    criterion = nn.CrossEntropyLoss(weight=weight_tensor, label_smoothing=0.05)
+    optimizer = optim.Adam(model.parameters(), lr=lr*0.5, weight_decay=1e-4)
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=8)
 
     best_val_acc = 0.0
     best_model_path = None

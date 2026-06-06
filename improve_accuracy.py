@@ -134,7 +134,7 @@ def quick_correct(fid, plate='', brand='', v_type='', color=''):
 
 # ============== 3. 数据增强（生成训练样本） ==============
 
-def augment_image(img, num_variants=3):
+def augment_image(img, num_variants=3, label=None):
     """
     对单张图片做数据增强，生成多个变体
     返回: list of augmented images
@@ -142,7 +142,7 @@ def augment_image(img, num_variants=3):
     aug_imgs = [img.copy()]
     h, w = img.shape[:2]
 
-    for _ in range(num_variants):
+    for i in range(num_variants):
         aug = img.copy()
 
         # 随机亮度（范围加大）
