@@ -27,6 +27,8 @@ from database import (
     import_csv_to_db
 )
 from inference import load_models, predict_single
+from feedback_db import save_feedback, list_pending_feedback, update_feedback, get_feedback_stats
+from improve_accuracy import enhance_image_for_plate
 
 # ============== 初始化 ==============
 Config.ensure_dirs()
@@ -53,11 +55,83 @@ def save_upload_file(file_obj):
 
 
 # ============== 页面路由 ==============
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    """首页"""
+    """首页：GET 显示页面，POST 处理上传并显示结果"""
     stats = get_stats()
-    return render_template('index.html', stats=stats)
+
+    if request.method == 'GET':
+        return render_template('index.html', stats=stats)
+
+    # POST 处理
+    if 'file' not in request.files:
+        return render_template('index.html', error='请选择要上传的图片', stats=stats)
+
+    file = request.files['file']
+    if file.filename == '' or not allowed_file(file.filename):
+        return render_template('index.html', error='文件无效或不支持的格式', stats=stats)
+
+    try:
+        unique_name, upload_path = save_upload_file(file)
+        result_name = f"result_{unique_name}"
+        result_path = os.path.join(Config.RESULT_FOLDER, result_name)
+
+        result = predict_single(upload_path, save_result_path=result_path)
+
+        if result['error']:
+            return render_template('index.html', error=result['error'], stats=stats)
+
+        add_record(
+            image_path=upload_path,
+            plate=result['plate_number'],
+            v_type=result['vehicle_type'],
+            v_color=result['vehicle_color'],
+            brand=result['vehicle_brand'],
+            is_fake=result['is_fake'],
+            true_brand=result['true_brand'],
+            confidence=result['confidence'],
+            result_image=result_path
+        )
+
+        # 保存反馈数据（用于后续精度提升）
+        try:
+            save_feedback(upload_path, result['plate_number'], result['vehicle_type'],
+                          result['vehicle_color'], result['vehicle_brand'], result['is_fake'])
+        except Exception as e:
+            app.logger.warning(f"保存反馈数据失败: {e}")
+
+        # 构造 result_image 的 URL
+        result_image_url = url_for('static', filename=f'results/{result_name}')
+
+        return render_template('index.html',
+                               result=result,
+                               result_image=result_image_url,
+                               stats=get_stats())
+    except Exception as e:
+        app.logger.error(f"分析失败: {e}", exc_info=True)
+        return render_template('index.html', error=f'分析失败: {str(e)}', stats=stats)
+
+
+@app.route('/feedback')
+def feedback_page():
+    """反馈数据修正页面"""
+    records = list_pending_feedback(limit=50)
+    stats = get_feedback_stats()
+    return render_template('feedback.html', records=records, stats=stats)
+
+
+@app.route('/api/feedback/<fid>/correct', methods=['POST'])
+def api_correct_feedback(fid):
+    """修正单条反馈数据"""
+    data = request.get_json() or {}
+    ok = update_feedback(
+        fid,
+        corrected_plate=data.get('plate', ''),
+        corrected_brand=data.get('brand', ''),
+        corrected_type=data.get('type', ''),
+        corrected_color=data.get('color', '')
+    )
+    return jsonify({'success': ok})
 
 
 @app.route('/history')
@@ -133,6 +207,13 @@ def api_analyze():
             result_image=result_path
         )
 
+        # 保存反馈数据
+        try:
+            save_feedback(upload_path, result['plate_number'], result['vehicle_type'],
+                          result['vehicle_color'], result['vehicle_brand'], result['is_fake'])
+        except Exception:
+            pass
+
         return jsonify({
             'success': True,
             'data': {
@@ -184,6 +265,13 @@ def api_analyze_get():
             confidence=result['confidence'],
             result_image=result_path
         )
+
+        # 保存反馈数据
+        try:
+            save_feedback(upload_path, result['plate_number'], result['vehicle_type'],
+                          result['vehicle_color'], result['vehicle_brand'], result['is_fake'])
+        except Exception:
+            pass
 
         return render_template('index.html',
                                result=result,

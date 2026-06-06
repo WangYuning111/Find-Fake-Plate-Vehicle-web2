@@ -13,6 +13,30 @@ import time
 import torch
 import numpy as np
 from config import Config
+from PIL import Image, ImageDraw, ImageFont
+
+# 自动查找系统中文字体
+def _find_chinese_font():
+    """查找系统中文字体，优先微软雅黑/宋体/黑体"""
+    if os.name == 'nt':  # Windows
+        candidates = [
+            r"C:\Windows\Fonts\msyh.ttc",
+            r"C:\Windows\Fonts\msyhbd.ttc",
+            r"C:\Windows\Fonts\simsun.ttc",
+            r"C:\Windows\Fonts\simhei.ttf",
+        ]
+    else:
+        candidates = [
+            "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+            "/System/Library/Fonts/PingFang.ttc",
+        ]
+    for path in candidates:
+        if os.path.exists(path):
+            return path
+    return None
+
+_FONT_PATH = _find_chinese_font()
 
 # ============== 模型缓存 ==============
 _models = {}
@@ -138,13 +162,13 @@ def detect_vehicle(img, models):
     return detections
 
 
-def classify_crop(crop, models):
+def classify_crop(crop, models, full_img=None, bbox=None):
     """对车辆裁剪图进行车型和颜色分类"""
     aap = models['aap']
     iap = models['iap']
     device = models['device']
 
-    # 车型
+    # 车型 (保持 MiniVGGNet)
     type_roi = aap.preprocess(crop)
     type_tensor = iap.preprocess(type_roi).unsqueeze(0).to(device)
     with torch.no_grad():
@@ -153,25 +177,117 @@ def classify_crop(crop, models):
     v_type = models['type_classes'][int(np.argmax(type_probs))]
     type_conf = float(np.max(type_probs))
 
-    # 颜色
-    color_roi = aap.preprocess(crop)
-    color_tensor = iap.preprocess(color_roi).unsqueeze(0).to(device)
-    with torch.no_grad():
-        color_output = models['color_model'](color_tensor)
-        color_probs = torch.softmax(color_output, dim=1)[0].cpu().numpy()
-    v_color = models['color_classes'][int(np.argmax(color_probs))]
-    color_conf = float(np.max(color_probs))
+    # 颜色 (改用 HSV 色彩空间分析，无需训练，更准确)
+    from color_classifier import classify_color_with_crop
+    if full_img is not None:
+        v_color, _, color_conf = classify_color_with_crop(full_img, bbox)
+    else:
+        v_color, _, color_conf = classify_color_with_crop(crop)
 
     return v_type, type_conf, v_color, color_conf
 
 
+# 中国车牌省份简称和校验规则
+_PLATE_PROVINCES = set("京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼")
+_PLATE_ALPHABET = set("ABCDEFGHJKLMNPQRSTUVWXYZ")
+_PLATE_DIGITS = set("0123456789")
+
+
+def _validate_plate(plate_text):
+    """
+    车牌号基本格式校验
+    返回: (is_valid, corrected_text)
+    """
+    if not plate_text or len(plate_text) < 6:
+        return False, plate_text
+
+    # 清理字符
+    text = plate_text.upper().replace('·', '').replace('-', '').replace(' ', '').replace('。', 'O').replace('｜', 'I')
+
+    # 首字符必须是省份简称
+    if text[0] not in _PLATE_PROVINCES:
+        # 尝试修复常见OCR错误
+        fix_map = {'0': '沪', '1': '京', '2': '津', '3': '冀', '4': '晋', '5': '蒙', '6': '辽',
+                   '7': '吉', '8': '黑', '9': '苏'}
+        if text[0] in fix_map:
+            text = fix_map[text[0]] + text[1:]
+        else:
+            return False, plate_text
+
+    # 第二位必须是字母
+    if len(text) >= 2 and text[1] not in _PLATE_ALPHABET:
+        return False, plate_text
+
+    # 长度校验：普通车牌 7 位（如京A12345），新能源 8 位（如京AD12345）
+    if len(text) == 7 or len(text) == 8:
+        return True, text
+
+    return False, plate_text
+
+
+def _postprocess_plate_results(all_results):
+    """
+    对多策略识别结果进行投票融合 + 校验
+    返回: (best_plate, confidence)
+    """
+    # 收集所有结果并统计出现频次
+    from collections import Counter
+
+    vote_pool = []
+    for text, conf, strategy in all_results:
+        text_clean = str(text).replace('·', '').replace('-', '').replace(' ', '')
+        is_valid, corrected = _validate_plate(text_clean)
+        if is_valid:
+            # 通过校验的结果，置信度加成
+            vote_pool.append((corrected, conf * 1.1, strategy))
+        else:
+            # 未通过校验，置信度惩罚
+            vote_pool.append((text_clean, conf * 0.5, strategy))
+
+    if not vote_pool:
+        return None, 0.0
+
+    # 按出现频次 + 平均置信度投票
+    plate_scores = {}
+    for text, conf, _ in vote_pool:
+        if text not in plate_scores:
+            plate_scores[text] = {'count': 0, 'total_conf': 0.0}
+        plate_scores[text]['count'] += 1
+        plate_scores[text]['total_conf'] += conf
+
+    # 综合得分 = 出现次数 * 0.3 + 平均置信度 * 0.7
+    best_plate = None
+    best_score = -1
+    for text, info in plate_scores.items():
+        avg_conf = info['total_conf'] / info['count']
+        score = info['count'] * 0.3 + avg_conf * 0.7
+        if score > best_score:
+            best_score = score
+            best_plate = text
+
+    if best_plate is None:
+        return None, 0.0
+
+    # 最终置信度 = 平均置信度
+    final_conf = plate_scores[best_plate]['total_conf'] / plate_scores[best_plate]['count']
+    return best_plate, min(final_conf, 1.0)
+
+
 def recognize_plate(img, crop=None):
-    """多级车牌识别策略"""
+    """多级车牌识别策略（含图像增强 + 后处理校验）"""
+    from improve_accuracy import enhance_image_for_plate, enhance_plate_region
+
     plateRecog = _models['plate_recog']
 
+    # 策略1: 原始全图
     strategies = [
         ("full", lambda: plateRecog(img)),
     ]
+
+    # 策略1b: 增强后的全图
+    enhanced_full = enhance_image_for_plate(img)
+    if enhanced_full is not None:
+        strategies.append(("enhanced_full", lambda: plateRecog(enhanced_full)))
 
     # 策略2: 全图放大
     h_o, w_o = img.shape[:2]
@@ -179,82 +295,137 @@ def recognize_plate(img, crop=None):
         scale = min(2.0, 2000 / max(h_o, w_o))
         enlarged = cv2.resize(img, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
         strategies.append(("scaled", lambda: plateRecog(enlarged)))
+        enhanced_enlarged = enhance_image_for_plate(enlarged)
+        if enhanced_enlarged is not None:
+            strategies.append(("enhanced_scaled", lambda: plateRecog(enhanced_enlarged)))
 
     # 策略3: 裁剪图
     if crop is not None and crop.size > 0:
         strategies.append(("crop", lambda: plateRecog(crop)))
-        # 策略4: 裁剪图下半部分
+        enhanced_crop = enhance_image_for_plate(crop)
+        if enhanced_crop is not None:
+            strategies.append(("enhanced_crop", lambda: plateRecog(enhanced_crop)))
+
+        # 策略4: 裁剪图下半部分（车牌位置）
         h_c, w_c = crop.shape[:2]
         bottom = crop[int(h_c*0.55):int(h_c*0.95), int(w_c*0.1):int(w_c*0.9)]
         if bottom.size > 0:
             bottom = cv2.resize(bottom, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
             strategies.append(("bottom", lambda: plateRecog(bottom)))
+            enhanced_bottom = enhance_image_for_plate(bottom)
+            if enhanced_bottom is not None:
+                strategies.append(("enhanced_bottom", lambda: plateRecog(enhanced_bottom)))
+            plate_binary = enhance_plate_region(bottom)
+            if plate_binary is not None:
+                strategies.append(("plate_binary", lambda: plateRecog(plate_binary)))
 
     all_results = []
     for name, fn in strategies:
         try:
             result = fn()
             if result and len(result) > 0:
-                all_results.extend(result)
-        except Exception as e:
+                weight = 0.95 if name.startswith("enhanced_") or name == "plate_binary" else 1.0
+                for r in result:
+                    if len(r) > 1:
+                        conf = float(r[1]) * weight if len(r) > 1 else 0
+                        all_results.append((str(r[0]), conf, name))
+        except Exception:
             continue
 
     if not all_results:
         raise PlateRecognizeError("所有车牌识别策略均失败")
 
-    # 过滤和排序
-    valid = []
-    for p in all_results:
-        if len(p) > 1:
-            text = str(p[0]).replace('·', '').replace('-', '')
-            conf = float(p[1]) if len(p) > 1 else 0
-            if len(text) >= Config.PLATE_MIN_LENGTH:
-                valid.append((str(p[0]), conf))
+    # 使用后处理投票融合
+    best_plate, best_conf = _postprocess_plate_results(all_results)
 
-    if not valid:
-        raise PlateRecognizeError("未能通过置信度过滤")
+    if best_plate is None:
+        raise PlateRecognizeError("未能通过车牌格式校验")
 
-    best = max(valid, key=lambda x: x[1])
-    return best[0], best[1]
+    return best_plate, best_conf
+
+
+def _cv2_to_pil(cv_img):
+    """OpenCV BGR 转 PIL RGB"""
+    return Image.fromarray(cv2.cvtColor(cv_img, cv2.COLOR_BGR2RGB))
+
+
+def _pil_to_cv2(pil_img):
+    """PIL RGB 转 OpenCV BGR"""
+    return cv2.cvtColor(np.array(pil_img), cv2.COLOR_RGB2BGR)
+
+
+def _draw_text_pil(pil_img, text, pos, font_size=20, color=(0, 255, 0)):
+    """使用 PIL 绘制中文文本"""
+    draw = ImageDraw.Draw(pil_img)
+    if _FONT_PATH and os.path.exists(_FONT_PATH):
+        font = ImageFont.truetype(_FONT_PATH, font_size)
+    else:
+        font = ImageFont.load_default()
+    draw.text(pos, text, font=font, fill=color)
+    return pil_img
 
 
 def draw_result(img, detections, selected_idx, plate, v_type, v_color, brand, is_fake):
-    """在图片上绘制检测框和结果标签"""
+    """在图片上绘制检测框和结果标签（支持中文）"""
     vis = img.copy()
     h, w = vis.shape[:2]
 
+    # 先画所有 OpenCV 元素（框）
     for i, det in enumerate(detections):
         x1, y1, x2, y2 = det['bbox']
         color = (0, 255, 0) if i == selected_idx else (128, 128, 128)
         thickness = 3 if i == selected_idx else 1
-
-        # 画框
         cv2.rectangle(vis, (x1, y1), (x2, y2), color, thickness)
 
-        # 标签
+    # 转为 PIL 绘制中文标签
+    pil_img = _cv2_to_pil(vis)
+
+    for i, det in enumerate(detections):
+        x1, y1 = det['bbox'][:2]
+        color = (0, 255, 0) if i == selected_idx else (128, 128, 128)
         label = f"{det['class_name']} {det['confidence']:.2f}"
-        (tw, th), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)
-        cv2.rectangle(vis, (x1, y1 - th - 10), (x1 + tw, y1), color, -1)
-        cv2.putText(vis, label, (x1, y1 - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+
+        # 文字背景
+        draw = ImageDraw.Draw(pil_img)
+        if _FONT_PATH and os.path.exists(_FONT_PATH):
+            font = ImageFont.truetype(_FONT_PATH, 18)
+        else:
+            font = ImageFont.load_default()
+        bbox = draw.textbbox((0, 0), label, font=font)
+        tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+
+        bg_color = tuple(color)
+        draw.rectangle([x1, y1 - th - 8, x1 + tw + 6, y1], fill=bg_color)
+        draw.text((x1 + 3, y1 - th - 6), label, font=font, fill=(255, 255, 255))
 
     # 底部信息栏
     info_lines = [
-        f"Plate: {plate}",
-        f"Type: {v_type} | Color: {v_color}",
-        f"Brand: {brand}",
-        f"Result: {'FAKE' if is_fake else 'NORMAL'}"
+        f"车牌: {plate}",
+        f"类型: {v_type} | 颜色: {v_color}",
+        f"品牌: {brand}",
+        f"结果: {'套牌车' if is_fake else '正常'}"
     ]
-    bar_h = 30 * len(info_lines) + 20
-    overlay = vis.copy()
-    cv2.rectangle(overlay, (0, h - bar_h), (w, h), (0, 0, 0), -1)
-    vis = cv2.addWeighted(vis, 0.7, overlay, 0.3, 0)
+    bar_h = 32 * len(info_lines) + 16
+    overlay = Image.new('RGBA', pil_img.size, (0, 0, 0, 0))
+    draw_o = ImageDraw.Draw(overlay)
+    draw_o.rectangle([0, h - bar_h, w, h], fill=(0, 0, 0, 180))
+    pil_img = Image.alpha_composite(pil_img.convert('RGBA'), overlay).convert('RGB')
+
+    draw = ImageDraw.Draw(pil_img)
+    if _FONT_PATH and os.path.exists(_FONT_PATH):
+        font = ImageFont.truetype(_FONT_PATH, 22)
+    else:
+        font = ImageFont.load_default()
 
     for i, line in enumerate(info_lines):
-        y = h - bar_h + 30 + i * 28
-        color = (0, 0, 255) if is_fake and i == len(info_lines) - 1 else (0, 255, 0)
-        cv2.putText(vis, line, (20, y), cv2.FONT_HERSHEY_SIMPLEX, 0.8, color, 2)
+        y = h - bar_h + 10 + i * 30
+        if is_fake and i == len(info_lines) - 1:
+            text_color = (255, 0, 0)
+        else:
+            text_color = (0, 255, 0)
+        draw.text((20, y), line, font=font, fill=text_color)
 
-    return vis
+    return _pil_to_cv2(pil_img)
 
 
 def predict_single(img_path, save_result_path=None):
@@ -307,7 +478,7 @@ def predict_single(img_path, save_result_path=None):
             raise InferenceError("车辆裁剪区域无效")
 
         # 4. 车型/颜色分类
-        v_type, type_conf, v_color, color_conf = classify_crop(crop, models)
+        v_type, type_conf, v_color, color_conf = classify_crop(crop, models, full_img=img, bbox=best_det['bbox'])
 
         # 5. 品牌（从 YOLO 检测类别）
         brand = best_det['class_name']
@@ -324,7 +495,7 @@ def predict_single(img_path, save_result_path=None):
 
         # 7. 套牌检测
         from database import check_fake_plate
-        is_fake, true_brand, _ = check_fake_plate(plate, brand)
+        is_fake, true_brand, _ = check_fake_plate(plate, brand, detected_brand_conf=brand_conf)
 
         # 8. 综合置信度
         overall_conf = (brand_conf + type_conf + color_conf + plate_conf) / 4

@@ -1,0 +1,20 @@
+id,timestamp,image_path,plate,v_type,v_color,brand,is_fake,corrected_plate,corrected_brand,corrected_type,corrected_color,status
+286858f1,2026-06-06 04:23:34,data\feedback_images\286858f1.jpg,鲁UT0309,minibus,blue,别克,1,,,,,pending
+9b8529cb,2026-06-06 04:23:48,data\feedback_images\9b8529cb.jpg,鲁BVH561,car,brown,日产越野车,0,,,,,pending
+92dddce0,2026-06-06 04:23:57,data\feedback_images\92dddce0.jpg,鲁B2BG58,minibus,red,福特面包车,0,,,,,pending
+12235d33,2026-06-06 04:24:11,data\feedback_images\12235d33.jpg,鲁BVH561,car,brown,日产越野车,0,,,,,pending
+fc1b584b,2026-06-06 04:33:57,data\feedback_images\fc1b584b.jpg,鲁BC211S,minibus,unknown,一汽卡车,1,,,,,pending
+a7617889,2026-06-06 04:34:11,data\feedback_images\a7617889.jpg,鲁BVH561,car,unknown,日产越野车,0,,,,,pending
+e5a80d66,2026-06-06 04:39:26,data\feedback_images\e5a80d66.jpg,鲁BC211S,minibus,blue,一汽卡车,1,,,,,pending
+3192b76f,2026-06-06 04:48:14,data\feedback_images\3192b76f.jpg,鲁BD108A,truck,blue,东风卡车,0,,,,,pending
+57f7576c,2026-06-06 04:48:20,data\feedback_images\57f7576c.jpg,鲁B6CR50,car,blue,日产越野车,0,,,,,pending
+8c3b7e5f,2026-06-06 14:32:50,data\feedback_images\8c3b7e5f.jpg,鲁BC211S,minibus,blue,一汽卡车,1,,,,,pending
+2277867c,2026-06-06 14:33:59,data\feedback_images\2277867c.jpg,鲁VJ5027,bus,black,一汽卡车,0,,,,,pending
+73f2c284,2026-06-06 14:34:27,data\feedback_images\73f2c284.jpg,皖J04312,bus,blue,一汽卡车,1,,,,,pending
+c9efbcee,2026-06-06 14:35:14,data\feedback_images\c9efbcee.jpg,鲁BH638A,car,blue,别克,1,,,,,pending
+8d59c854,2026-06-06 14:37:38,data\feedback_images\8d59c854.jpg,鲁BT0897,minibus,blue,五菱,1,,,,,pending
+14fe4fec,2026-06-06 14:37:59,data\feedback_images\14fe4fec.jpg,鲁BH7S55,minibus,blue,现代面包车,1,,,,,pending
+276ce4f1,2026-06-06 14:38:37,data\feedback_images\276ce4f1.jpg,鲁BN255N,truck,blue,江淮,1,,,,,pending
+181852d4,2026-06-06 14:42:23,data\feedback_images\181852d4.jpg,鲁BH638A,truck,blue,黄牌大巴,1,,,,,pending
+463742a9,2026-06-06 14:42:42,data\feedback_images\463742a9.jpg,鲁BH638A,car,blue,别克,1,,,,,pending
+45cebcaf,2026-06-06 14:43:43,data\feedback_images\45cebcaf.jpg,鲁B09P82,truck,black,黄牌大巴,1,,,,,pending

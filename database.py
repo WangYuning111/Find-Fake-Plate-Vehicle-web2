@@ -206,9 +206,46 @@ def list_vehicles(search=None, limit=100, offset=0):
         return [dict(row) for row in rows], total
 
 
-def check_fake_plate(plate_no, detected_brand):
+# 品牌别名映射表：同一品牌的不同叫法
+_BRAND_ALIASES = {
+    '大众': ['一汽大众', '上汽大众', '上海大众', 'Volkswagen', 'VW', 'vw'],
+    '别克': ['上汽通用别克', '上海别克', 'Buick'],
+    '奥迪': ['一汽奥迪', 'Audi'],
+    '奔驰': ['北京奔驰', 'Mercedes', 'Mercedes-Benz', 'Benz'],
+    '宝马': ['华晨宝马', 'BMW', 'Bayerische'],
+    '丰田': ['广汽丰田', '一汽丰田', 'Toyota'],
+    '本田': ['广汽本田', '东风本田', 'Honda'],
+    '日产': ['东风日产', '日产', 'Nissan'],
+    '现代': ['北京现代', 'Hyundai'],
+    '起亚': ['东风悦达起亚', 'Kia'],
+    '福特': ['长安福特', 'Ford'],
+    '雪佛兰': ['上汽通用雪佛兰', 'Chevrolet'],
+    '标致': ['东风标致', 'Peugeot'],
+    '雪铁龙': ['东风雪铁龙', 'Citroen'],
+    '比亚迪': ['BYD'],
+    '奇瑞': ['Chery'],
+    '吉利': ['Geely'],
+    '长安': ['Changan'],
+    '哈弗': ['Haval'],
+    '五菱': ['五菱宏光', 'Wuling'],
+}
+
+
+def _normalize_brand(brand):
+    """将品牌名称归一化到标准名"""
+    if not brand:
+        return ''
+    brand = brand.strip()
+    for standard, aliases in _BRAND_ALIASES.items():
+        if brand == standard or brand in aliases:
+            return standard
+    return brand
+
+
+def check_fake_plate(plate_no, detected_brand, detected_brand_conf=0.0):
     """
     套牌检测：对比数据库中的真实品牌
+    :param detected_brand_conf: YOLO品牌检测置信度（0~1）
     返回: (is_fake, true_brand, vehicle_info)
     """
     if detected_brand == '未知' or not detected_brand:
@@ -218,11 +255,25 @@ def check_fake_plate(plate_no, detected_brand):
     if vehicle is None:
         return False, None, None
 
-    true_brand = vehicle['car_brand']
-    # 支持品牌别名匹配，例如"大众家用车"匹配"大众"
-    is_match = detected_brand in true_brand or true_brand in detected_brand
-    is_fake = not is_match
-    return is_fake, true_brand, vehicle
+    true_brand_raw = vehicle['car_brand']
+    true_brand = _normalize_brand(true_brand_raw)
+    norm_detected = _normalize_brand(detected_brand)
+
+    # 标准名完全匹配，或一方包含另一方
+    is_match = (norm_detected == true_brand or
+                norm_detected in true_brand or
+                true_brand in norm_detected)
+
+    if is_match:
+        return False, true_brand_raw, vehicle
+
+    # 品牌不匹配时的容错处理
+    # 如果YOLO品牌检测置信度较低(<0.65)，可能是识别错误，不直接判定套牌
+    if detected_brand_conf < 0.65:
+        return False, true_brand_raw, vehicle
+
+    # 高置信度下品牌仍不匹配 -> 判定为套牌
+    return True, true_brand_raw, vehicle
 
 
 # 初始化

@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% block title %}数据修正 - 套牌车稽查系统{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h4><i class="bi bi-pencil-square"></i> 识别结果修正</h4>
+    <span class="badge bg-info">待修正: {{ stats.pending }} | 已修正: {{ stats.corrected }} | 总计: {{ stats.total }}</span>
+</div>
+
+<div class="alert alert-light border mb-4">
+    <i class="bi bi-info-circle"></i> <strong>使用说明：</strong>系统会自动保存每次识别结果。如果你发现某张图片的识别有误，可以在这里修正标签。修正后的数据将用于后续模型训练，持续提升识别精度。
+</div>
+
+{% if records %}
+<div class="row g-3">
+    {% for rec in records %}
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm" id="card-{{ rec.id }}">
+            <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                <small class="text-muted">{{ rec.timestamp }}</small>
+                <span class="badge bg-warning text-dark status-badge">待修正</span>
+            </div>
+            <div style="height: 180px; overflow: hidden;">
+                <img src="{{ url_for('static', filename='feedback_images/' + rec.image_path.split('/')[-1]) }}" class="card-img-top" style="width:100%; height:100%; object-fit: cover;" alt="车辆图片">
+            </div>
+            <div class="card-body">
+                <div class="mb-2">
+                    <small class="text-muted">原始识别结果</small>
+                    <div class="d-flex flex-wrap gap-1 mt-1">
+                        <span class="badge bg-secondary">{{ rec.plate }}</span>
+                        <span class="badge bg-secondary">{{ rec.brand }}</span>
+                        <span class="badge bg-secondary">{{ rec.v_type }}</span>
+                        <span class="badge bg-secondary">{{ rec.v_color }}</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="correction-form" data-fid="{{ rec.id }}">
+                    <div class="mb-2">
+                        <label class="form-label small mb-1">正确车牌</label>
+                        <input type="text" class="form-control form-control-sm plate-input" placeholder="{{ rec.plate }}">
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label small mb-1">正确品牌</label>
+                        <input type="text" class="form-control form-control-sm brand-input" placeholder="{{ rec.brand }}">
+                    </div>
+                    <div class="row g-2 mb-2">
+                        <div class="col-6">
+                            <label class="form-label small mb-1">正确类型</label>
+                            <select class="form-select form-select-sm type-input">
+                                <option value="">保持: {{ rec.v_type }}</option>
+                                <option value="bus">bus</option>
+                                <option value="car">car</option>
+                                <option value="minibus">minibus</option>
+                                <option value="truck">truck</option>
+                                <option value="taxi">taxi</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label small mb-1">正确颜色</label>
+                            <select class="form-select form-select-sm color-input">
+                                <option value="">保持: {{ rec.v_color }}</option>
+                                <option value="black">black</option>
+                                <option value="blue">blue</option>
+                                <option value="brown">brown</option>
+                                <option value="green">green</option>
+                                <option value="red">red</option>
+                                <option value="silver">silver</option>
+                                <option value="white">white</option>
+                                <option value="yellow">yellow</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm w-100 save-btn">
+                        <i class="bi bi-check-lg"></i> 保存修正
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<div class="text-center py-5">
+    <i class="bi bi-clipboard-check fs-1 text-muted"></i>
+    <p class="text-muted mt-3">暂无待修正的反馈数据</p>
+    <small class="text-muted">请先上传图片进行分析，系统会自动保存识别结果供你修正</small>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.querySelectorAll('.save-btn').forEach(btn => {
+    btn.addEventListener('click', async function() {
+        const card = this.closest('.card');
+        const form = this.closest('.correction-form');
+        const fid = form.dataset.fid;
+        const plate = form.querySelector('.plate-input').value;
+        const brand = form.querySelector('.brand-input').value;
+        const type = form.querySelector('.type-input').value;
+        const color = form.querySelector('.color-input').value;
+
+        if (!plate && !brand && !type && !color) {
+            alert('请至少填写一项修正内容');
+            return;
+        }
+
+        this.disabled = true;
+        this.innerHTML = '<span class="spinner-border spinner-border-sm"></span> 保存中...';
+
+        try {
+            const res = await fetch(`/api/feedback/${fid}/correct`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ plate, brand, type, color })
+            });
+            const data = await res.json();
+            if (data.success) {
+                card.querySelector('.status-badge').textContent = '已修正';
+                card.querySelector('.status-badge').classList.replace('bg-warning', 'bg-success');
+                card.querySelector('.status-badge').classList.replace('text-dark', 'text-white');
+                form.innerHTML = '<div class="alert alert-success py-2 mb-0"><i class="bi bi-check-circle"></i> 修正已保存，将用于后续训练</div>';
+            } else {
+                alert('保存失败');
+                this.disabled = false;
+                this.innerHTML = '<i class="bi bi-check-lg"></i> 保存修正';
+            }
+        } catch (e) {
+            alert('网络错误: ' + e);
+            this.disabled = false;
+            this.innerHTML = '<i class="bi bi-check-lg"></i> 保存修正';
+        }
+    });
+});
+</script>
+{% endblock %}
