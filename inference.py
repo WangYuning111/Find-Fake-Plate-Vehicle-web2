@@ -15,6 +15,8 @@ import numpy as np
 from config import Config
 from brand_corrector import correct_brand, validate_brand_type_consistency
 from PIL import Image, ImageDraw, ImageFont
+import torchvision.transforms as T
+from torchvision import models
 
 # 自动查找系统中文字体
 def _find_chinese_font():
@@ -102,6 +104,65 @@ def load_models(force_reload=False):
     v_color_model.load_state_dict(torch.load(Config.VEHICLE_COLOR_MODEL_PATH, map_location=device, weights_only=True))
     v_color_model.eval()
 
+    # 品牌分类器 (ResNet18)
+    brand_model = None
+    brand_classes = None
+    brand_transform = None
+    brand_model_path = 'cfg/vehicle_brand_resnet18.pth'
+    if os.path.exists(brand_model_path):
+        # 先从checkpoint读取类别信息
+        checkpoint = torch.load(brand_model_path, map_location=device, weights_only=True)
+        # 确定类别数
+        if 'fc.weight' in checkpoint:
+            num_brands = checkpoint['fc.weight'].shape[0]
+        else:
+            num_brands = 32
+        brand_model = models.resnet18(weights=None)
+        brand_model.fc = torch.nn.Linear(brand_model.fc.in_features, num_brands)
+        brand_model.load_state_dict(checkpoint)
+        brand_model = brand_model.to(device)
+        brand_model.eval()
+        # 从brand_labels.csv获取类别顺序
+        import csv
+        brand_labels_set = set()
+        if os.path.exists('brand_labels.csv'):
+            with open('brand_labels.csv', 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    brand_labels_set.add(row['brand'].strip())
+        brand_classes = sorted(list(brand_labels_set)) if brand_labels_set else [
+            "奥迪", "宝马", "奔驰", "比亚迪", "标致", "别克", "长安", "长城", "大众", "东风",
+            "福特", "福田", "哈飞", "海马", "江淮", "江铃", "金杯", "铃木", "马自达", "日产",
+            "荣威", "奇瑞", "起亚", "其他", "三菱", "上汽", "五菱", "现代", "雪佛兰", "雪铁龙",
+            "一汽", "中华"
+        ]
+        # 确保类别数匹配
+        if len(brand_classes) != num_brands:
+            print(f"[WARN] 品牌类别数不匹配: csv={len(brand_classes)}, model={num_brands}")
+            # 用默认值补足或截断
+            default_classes = [
+                "奥迪", "宝马", "奔驰", "比亚迪", "标致", "别克", "长安", "长城", "大众", "东风",
+                "福特", "福田", "哈飞", "海马", "江淮", "江铃", "金杯", "铃木", "马自达", "日产",
+                "荣威", "奇瑞", "起亚", "其他", "三菱", "上汽", "五菱", "现代", "雪佛兰", "雪铁龙",
+                "一汽", "中华"
+            ]
+            if len(brand_classes) < num_brands:
+                for c in default_classes:
+                    if c not in brand_classes:
+                        brand_classes.append(c)
+                    if len(brand_classes) == num_brands:
+                        break
+            brand_classes = brand_classes[:num_brands]
+        brand_transform = T.Compose([
+            T.ToPILImage(),
+            T.Resize((224, 224)),
+            T.ToTensor(),
+            T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        ])
+        print(f"[INFERENCE] 品牌分类器加载完成: {num_brands} 个品牌")
+    else:
+        print("[INFERENCE] 品牌分类器未找到，使用YOLO品牌输出")
+
     # 预处理器
     aap = AspectAwarePreprocessor(100, 100)
     iap = ImageToTensorPreprocessor(data_format='channels_first')
@@ -110,6 +171,9 @@ def load_models(force_reload=False):
         'yolo': yolo,
         'type_model': v_type_model,
         'color_model': v_color_model,
+        'brand_model': brand_model,
+        'brand_classes': brand_classes,
+        'brand_transform': brand_transform,
         'aap': aap,
         'iap': iap,
         'plate_recog': plate_recog,
@@ -511,16 +575,35 @@ def predict_single(img_path, save_result_path=None):
         # 4. 车型/颜色分类
         v_type, type_conf, v_color, color_conf = classify_crop(crop, models, full_img=img, bbox=best_det['bbox'])
 
-        # 5. 品牌（从 YOLO 检测类别 + 后处理修正）
-        raw_brand = best_det['class_name']
-        brand_conf = best_det['confidence']
-        
-        # 如果YOLO置信度太低或是模糊类别，标记为未知
-        if brand_conf < 0.3 or raw_brand in ['其他', '黄牌大巴', '黄牌卡车', '公交车']:
-            brand = '未知'
-            brand_conf = 0.0
+        # 5. 品牌（优先使用独立品牌分类器，回退到YOLO）
+        brand_model = models.get('brand_model')
+        if brand_model is not None and models.get('brand_transform') is not None:
+            # 使用独立ResNet18品牌分类器
+            try:
+                brand_input = models['brand_transform'](crop).unsqueeze(0).to(models['device'])
+                with torch.no_grad():
+                    brand_output = brand_model(brand_input)
+                    brand_probs = torch.softmax(brand_output, dim=1)[0].cpu().numpy()
+                brand_idx = int(np.argmax(brand_probs))
+                brand = models['brand_classes'][brand_idx]
+                brand_conf = float(brand_probs[brand_idx])
+                # 如果置信度太低，标记为未知
+                if brand_conf < 0.3:
+                    brand = '未知'
+                    brand_conf = 0.0
+            except Exception as e:
+                print(f"[WARN] 品牌分类器推理失败: {e}")
+                brand = '未知'
+                brand_conf = 0.0
         else:
-            brand = correct_brand(raw_brand, vehicle_type=v_type, vehicle_color=v_color)
+            # 回退到YOLO品牌输出
+            raw_brand = best_det['class_name']
+            brand_conf = best_det['confidence']
+            if brand_conf < 0.3 or raw_brand in ['其他', '黄牌大巴', '黄牌卡车', '公交车']:
+                brand = '未知'
+                brand_conf = 0.0
+            else:
+                brand = correct_brand(raw_brand, vehicle_type=v_type, vehicle_color=v_color)
 
         # 6. 车牌识别
         try:
