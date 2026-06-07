@@ -217,39 +217,116 @@ def preprocess_image(img_path):
 
 
 def detect_vehicle(img, models):
-    """YOLO 车辆检测，返回所有检测结果"""
+    """YOLO 车辆检测，返回所有检测结果（支持多尺度检测）"""
     yolo = models['yolo']
     device = models['device']
 
-    # 第一次检测
+    all_detections = []
+    h, w = img.shape[:2]
+
+    # 策略1: 原始尺寸检测
     results = yolo(source=img, conf=Config.YOLO_CONF, iou=Config.YOLO_IOU, verbose=False)
     result = results[0]
+    if len(result.boxes) > 0:
+        for i in range(len(result.boxes)):
+            all_detections.append({
+                'bbox': tuple(result.boxes.xyxy.cpu().numpy().astype(int)[i]),
+                'class_id': int(result.boxes.cls.cpu().numpy()[i]),
+                'class_name': result.names.get(int(result.boxes.cls.cpu().numpy()[i]), "unknown"),
+                'confidence': float(result.boxes.conf.cpu().numpy()[i]),
+                'scale': 'original',
+            })
 
-    # 如果没检测到，降低阈值再试一次
-    if len(result.boxes) == 0:
-        results = yolo(source=img, conf=0.05, iou=0.3, verbose=False)
+    # 策略2: 如果原始尺寸没检测到或小图，尝试放大
+    if len(all_detections) == 0 or max(h, w) < 800:
+        scale = 2.0 if max(h, w) < 600 else 1.5
+        enlarged = cv2.resize(img, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
+        results = yolo(source=enlarged, conf=0.05, iou=0.3, verbose=False)
         result = results[0]
+        if len(result.boxes) > 0:
+            for i in range(len(result.boxes)):
+                x1, y1, x2, y2 = result.boxes.xyxy.cpu().numpy().astype(int)[i]
+                # 将坐标缩放回原始尺寸
+                all_detections.append({
+                    'bbox': (int(x1/scale), int(y1/scale), int(x2/scale), int(y2/scale)),
+                    'class_id': int(result.boxes.cls.cpu().numpy()[i]),
+                    'class_name': result.names.get(int(result.boxes.cls.cpu().numpy()[i]), "unknown"),
+                    'confidence': float(result.boxes.conf.cpu().numpy()[i]) * 0.9,  # 放大检测置信度惩罚
+                    'scale': f'enlarged_{scale}x',
+                })
 
-    if len(result.boxes) == 0:
+    # 策略3: 如果还是没检测到，尝试旋转图片（处理旋转数据增强的图片）
+    if len(all_detections) == 0:
+        for angle in [15, -15, 30, -30, 45, -45]:
+            center = (w // 2, h // 2)
+            M = cv2.getRotationMatrix2D(center, angle, 1.0)
+            rotated = cv2.warpAffine(img, M, (w, h), borderValue=(0, 0, 0))
+            results = yolo(source=rotated, conf=0.05, iou=0.3, verbose=False)
+            result = results[0]
+            if len(result.boxes) > 0:
+                for i in range(len(result.boxes)):
+                    x1, y1, x2, y2 = result.boxes.xyxy.cpu().numpy().astype(int)[i]
+                    # 将坐标旋转回原始角度
+                    pts = np.array([[x1, y1], [x2, y1], [x2, y2], [x1, y2]], dtype=np.float32)
+                    M_inv = cv2.getRotationMatrix2D(center, -angle, 1.0)
+                    pts_rotated = cv2.transform(np.array([pts]), M_inv)[0]
+                    rx1 = int(min(pts_rotated[:, 0]))
+                    ry1 = int(min(pts_rotated[:, 1]))
+                    rx2 = int(max(pts_rotated[:, 0]))
+                    ry2 = int(max(pts_rotated[:, 1]))
+                    all_detections.append({
+                        'bbox': (rx1, ry1, rx2, ry2),
+                        'class_id': int(result.boxes.cls.cpu().numpy()[i]),
+                        'class_name': result.names.get(int(result.boxes.cls.cpu().numpy()[i]), "unknown"),
+                        'confidence': float(result.boxes.conf.cpu().numpy()[i]) * 0.7,
+                        'scale': f'rotated_{angle}',
+                    })
+                break  # 找到一个就退出
+
+    # 策略4: 如果还是没检测到，进一步降低阈值
+    if len(all_detections) == 0:
+        results = yolo(source=img, conf=0.01, iou=0.3, verbose=False)
+        result = results[0]
+        if len(result.boxes) > 0:
+            for i in range(len(result.boxes)):
+                all_detections.append({
+                    'bbox': tuple(result.boxes.xyxy.cpu().numpy().astype(int)[i]),
+                    'class_id': int(result.boxes.cls.cpu().numpy()[i]),
+                    'class_name': result.names.get(int(result.boxes.cls.cpu().numpy()[i]), "unknown"),
+                    'confidence': float(result.boxes.conf.cpu().numpy()[i]) * 0.8,
+                    'scale': 'low_conf',
+                })
+
+    if len(all_detections) == 0:
         raise NoVehicleError("未在图片中检测到车辆")
 
-    boxes = result.boxes.xyxy.cpu().numpy().astype(int)
-    classes = result.boxes.cls.cpu().numpy().astype(int)
-    confs = result.boxes.conf.cpu().numpy()
-    names = result.names
+    # 去重：如果同一个目标被多次检测，保留置信度最高的
+    # 使用IOU去重
+    def iou(box1, box2):
+        x1, y1, x2, y2 = box1
+        x3, y3, x4, y4 = box2
+        xi1 = max(x1, x3)
+        yi1 = max(y1, y3)
+        xi2 = min(x2, x4)
+        yi2 = min(y2, y4)
+        inter = max(0, xi2 - xi1) * max(0, yi2 - yi1)
+        area1 = (x2 - x1) * (y2 - y1)
+        area2 = (x4 - x3) * (y4 - y3)
+        return inter / (area1 + area2 - inter + 1e-6)
 
-    detections = []
-    for i in range(len(boxes)):
-        x1, y1, x2, y2 = boxes[i]
-        cls_id = int(classes[i])
-        detections.append({
-            'bbox': (int(x1), int(y1), int(x2), int(y2)),
-            'class_id': cls_id,
-            'class_name': names.get(cls_id, f"class_{cls_id}"),
-            'confidence': float(confs[i]),
-        })
+    # 按置信度排序，保留不重叠的检测
+    all_detections.sort(key=lambda x: x['confidence'], reverse=True)
+    final_detections = []
+    for det in all_detections:
+        is_duplicate = False
+        for existing in final_detections:
+            if iou(det['bbox'], existing['bbox']) > 0.5:
+                is_duplicate = True
+                break
+        if not is_duplicate:
+            final_detections.append(det)
 
-    return detections
+    return final_detections
 
 
 def classify_crop(crop, models, full_img=None, bbox=None):
