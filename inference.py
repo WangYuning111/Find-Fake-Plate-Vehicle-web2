@@ -13,6 +13,7 @@ import time
 import torch
 import numpy as np
 from config import Config
+from brand_corrector import correct_brand, validate_brand_type_consistency
 from PIL import Image, ImageDraw, ImageFont
 
 # 自动查找系统中文字体
@@ -510,8 +511,9 @@ def predict_single(img_path, save_result_path=None):
         # 4. 车型/颜色分类
         v_type, type_conf, v_color, color_conf = classify_crop(crop, models, full_img=img, bbox=best_det['bbox'])
 
-        # 5. 品牌（从 YOLO 检测类别）
-        brand = best_det['class_name']
+        # 5. 品牌（从 YOLO 检测类别 + 后处理修正）
+        raw_brand = best_det['class_name']
+        brand = correct_brand(raw_brand, vehicle_type=v_type, vehicle_color=v_color)
         brand_conf = best_det['confidence']
 
         # 6. 车牌识别

@@ -1,0 +1,6 @@
+path: C:\Users\13043\Desktop\FindFakePlateVehicle-web\datasets\vehicle_brand
+train: images/train
+val: images/val
+
+nc: 31
+names: ['大众', '别克', '福特', '东风', '长安', '日产', '现代', '一汽', '江淮', '金杯', '福田', '江铃', '哈飞', '雪铁龙', '中华', '雪佛兰', '奥迪', '长城', '标致', '马自达', '铃木', '五菱', '海马', '宝马', '荣威', '比亚迪', '奇瑞', '本田', '丰田', '起亚', '奔驰']
