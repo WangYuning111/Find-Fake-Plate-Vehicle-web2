@@ -1,271 +1,50 @@
-# 套牌车辆识别系统 Web端 V1.0
-
-## 一、项目简介
-
-本项目是一款基于深度学习的套牌车辆识别网页系统，整合车辆检测、车牌定位、字符识别、车型分类、颜色识别与信息比对逻辑，实现对车辆号牌的智能识别与套牌异常判定。用户可通过网页端上传车辆图片，系统自动完成车辆定位、车牌提取、字符识别、车型与颜色分类，最终与备案数据库进行比对，输出识别结果与套牌风险判定结果，具备完整的前端交互与后端推理能力。项目全程自主开发，完成从算法集成、模型训练、接口开发到网页可视化部署的全流程工程落地。
-
-## 二、技术栈
-
-- **前端技术**：HTML、CSS、JavaScript，实现页面布局、图片上传、结果展示、历史记录查询、车辆库管理等交互功能。
-- **后端技术**：Python（Flask），搭建 RESTful 服务接口，处理前端请求、调用识别算法、执行业务逻辑运算与数据库操作。
-- **核心算法**：
-  - 基于 YOLO 的车辆检测算法，完成车辆与车牌区域的精准定位；
-  - 基于 HyperLPR 与多级图像增强策略的车牌 OCR 字符识别算法；
-  - 基于 MiniVGGNet 的车型（4类）与颜色（8色）分类算法；
-  - 基于 HSV 色彩空间的智能颜色分类优化算法。
-- **数据库**：SQLite，持久化存储车辆备案信息、识别历史记录与反馈数据。
-- **项目部署**：本地服务部署（支持 Docker 容器化），实现前后端联调、实时识别推理。
-
-## 三、核心功能模块
-
-- **图片上传与预览模块**：支持本地车辆图片上传、前端实时预览、格式与大小校验。
-- **车辆检测定位模块**：精准定位图片中车辆与车牌区域，完成车牌矫正与裁剪。
-- **车牌字符识别模块**：对裁剪后的车牌区域进行 OCR 识别，输出完整车牌号码。
-- **车型与颜色分类模块**：对检测到的车辆进行车型（轿车/客车/面包车/货车）与颜色（黑/蓝/棕/绿/红/银/白/黄）智能分类。
-- **套牌识别判定模块**：通过识别出的车牌信息与备案数据库比对，判断车辆是否存在套牌异常，输出风险提示。
-- **结果可视化展示模块**：网页端展示原图、检测框标注、车牌区域、识别号码、车型颜色、判定结果，交互清晰直观。
-- **历史记录管理模块**：支持识别记录的分页查询、统计分析与持久化存储。
-- **车辆库管理模块**：支持车辆备案信息的增删改查与 CSV 批量导入。
-- **批量分析模块**：支持同时上传多张图片进行批量套牌检测。
-
-## 四、运行环境与使用说明
-
-### 运行环境
-
-- Python 3.8 及以上
-- Windows / macOS / Linux 系统
-- 支持 CPU 推理，推荐配备 NVIDIA GPU 加速
-
-### 依赖安装
-
-```bash
-pip install -r requirements.txt
-```
-
-### 模型下载（首次使用必需）
-
-模型权重文件（约 200MB）未纳入源代码仓库，首次运行前需下载：
-
-**方式一：一键脚本（推荐）**
-
-```bash
-# Linux / macOS / Git Bash
-bash download_model.sh
-
-# Windows
-python download_models.py
-```
-
-**方式二：手动下载**
-
-从 [GitHub Release v1.0.0](https://github.com/WangYuning111/Find-Fake-Plate-Vehicle-web/releases/tag/v1.0.0) 下载以下文件到 `weights/` 目录：
-
-| 文件名 | 说明 | 大小 |
-|--------|------|------|
-| `best.pt` | YOLO 车辆检测模型 | ~15MB |
-| `vehicle_type.pth` | 车型分类模型 (4类) | ~80MB |
-| `vehicle_color.pth` | 颜色分类模型 (8色) | ~80MB |
-| `vehicle_brand_resnet18.pth` | 品牌分类模型 (26品牌) | ~44MB |
-
-> 若本地已存在训练好的模型文件，可直接从 `cfg/` 目录复制到 `weights/`：
-> ```bash
-> cp cfg/*.pth cfg/*.pt weights/
-> ```
-
-### 启动方式
-
-```bash
-python app.py
-```
-
-访问 http://localhost:8090 即可上传图片进行套牌车识别测试。
-
-### Docker 部署（可选）
-
-```bash
-docker-compose up -d
-```
-
-### 模型说明
-
-本项目算法推理代码为自主整合与优化开发，预训练权重文件仅用于模型推理，不纳入源代码著作权登记范围，运行时可自行下载或重新训练配置。
-
-## 五、项目开发分工（双人合作）
-
-### 第一开发人：王昱宁（核心主导开发）
-
-- 负责项目整体需求分析、系统架构设计与整体功能规划；
-- 完成后端服务搭建（Flask）、RESTful API 接口编写、前后端联调逻辑开发；
-- 负责 YOLO 车辆检测算法、HyperLPR 车牌 OCR 识别算法的整合、代码适配与推理逻辑优化；
-- 负责 MiniVGGNet 车型/颜色分类模型的训练策略设计、数据增强、标签平滑与模型调优；
-- 独立编写套牌判定核心业务逻辑（车牌-品牌数据库比对、异常识别规则设计）；
-- 负责 HSV 色彩空间颜色分类算法的优化与准确率提升；
-- 负责项目整体调试、功能迭代、代码优化与版本整合；
-- 负责 SQLite 数据库设计、车辆库管理、历史记录与反馈闭环系统的开发。
-
-### 第二开发人：苏菩涵（合作辅助开发）
-
-- 负责前端页面布局设计、CSS 样式美化与 JavaScript 交互功能开发；
-- 实现图片上传、预览、结果回显、历史记录分页等前端交互模块；
-- 负责车辆图片数据的收集、整理与数据标注工作；
-- 负责 AI 模型训练的数据预处理、数据集划分与训练辅助工作；
-- 协助完成项目功能测试、BUG 排查、适配优化与兼容性调整；
-- 整理项目素材、运行截图、项目文档与操作说明。
-
-## 六、项目迭代记录
-
-项目采用阶段性迭代开发，通过多次 Git 提交完成功能更新，具备完整的自主开发痕迹：
-
-1. **项目初始化**：搭建 Flask 项目骨架，配置目录结构，初始化 Git 仓库；
-2. **前端页面搭建**：完成首页、上传页、结果展示页的基础 HTML/CSS/JS 开发；
-3. **后端接口开发**：实现图片上传、车辆检测、车牌识别等核心 API；
-4. **算法模块集成**：集成 YOLO 车辆检测、HyperLPR 车牌 OCR、车型/颜色分类模型；
-5. **套牌逻辑开发**：实现车牌-品牌数据库比对、异常判定规则与风险提示；
-6. **数据管理开发**：实现 SQLite 数据库、车辆库 CRUD、历史记录查询；
-7. **UI 美化与交互优化**：前端样式迭代、响应式适配、结果可视化增强；
-8. **算法精度优化**：HSV 颜色阈值调优、品牌别名映射、低置信度容错机制；
-9. **训练 pipeline 构建**：完成数据增强、标签平滑、学习率调度与早停策略；
-10. **模型管理与发布**：模型权重 Git 分离、Release 附件发布、一键下载脚本；
-11. **BUG 修复与稳定**：修复黑色车辆误判、品牌误报、旋转图片识别等问题，版本稳定发布；
-12. **品牌标注清洗（第一轮）**：系统梳理 `brand_labels.csv` 中标记为"其他"的样本，人工审图并修正 9 张错误标注（一汽、金杯、福田、大众、长城、江铃、丰田等），"其他"占比从 30.4% 降至 26.3%；
-13. **品牌标注清洗（第二轮）**：继续清理"其他"标签，修正 11 张图片品牌（一汽、江铃、长安、中华、奇瑞、雪铁龙、现代、金杯、大众等），解决类别极度不均衡问题（大众 124 张 vs 本田 11 张 vs 宝马 2 张）；
-14. **品牌标注清洗（第三轮）**：追加修正 5 张图片（本田、大众、丰田等），进一步扩充少样本品牌训练数据，"其他"占比降至约 24.3%；
-15. **品牌模型迭代重训练**：基于清洗后的标注数据对 ResNet18 品牌分类模型进行多轮迭代训练（30 epoch，学习率调度 + 早停策略），使模型学习修正后的标签分布；
-16. **品牌置信度阈值优化**：将 `inference.py` 中品牌识别输出阈值从 0.30 下调至 0.15，避免大量本可正确识别的结果因置信度偏低而被强制覆盖为"未知"；
-17. **套牌判定逻辑修复**：移除 `database.py` 中 `detected_brand_conf < 0.65` 的容错跳过逻辑，改为只要数据库备案品牌与识别品牌不匹配即判定为疑似套牌，消除"品牌越不准 → 越不被判套牌"的死循环；
-18. **少样本品牌治理**：针对本田、宝马、中华等低频品牌样本不足导致的识别率低问题，持续从"其他"类别中挖掘并补充正样本标注，优化模型对低频品牌的判别能力；
-19. **品牌标注清洗（第四轮~第十轮）与模型最终训练**：持续多轮清洗标注数据，累计修正约 200+ 张图片，将"其他"占比从 30% 降至约 21%，并基于清洗后的 295 张标注数据完成品牌分类模型的最终训练与测试验证；
-20. **品牌标注深度清洗与批量自动标注**：继续人工审图修正第 11~13 批共 88 张图片，并基于当前模型高置信度批量自动标注 253 张"其他"样本（置信度>=0.80），"其他"占比降至约 21.4%（全部 809 张中从最初 63.5% 降至 21.4%），已标注样本增至 636 张，训练验证准确率达到 89.7%，10 轮随机测试平均正确率 98.0%。
-
-## 七、项目展示截图
-
-以下为系统实际运行截图，存放于 `screenshots/` 目录：
-
-### 1. 项目首页
-
-![项目首页](screenshots/01_home.jpg)
-
-系统主界面，展示功能入口、系统简介与统计信息概览，用户可快速进入单图识别、批量识别、历史记录与车辆库管理等模块。
-
-### 2. 图片上传界面
-
-![图片上传](screenshots/02_upload.jpg)
-
-用户选择车辆图片后的上传与预览效果，支持拖拽上传，展示待检测图片的缩略图，并提供"开始识别"按钮触发后续推理流程。
-
-### 3. 正常车牌识别结果
-
-![正常结果](screenshots/03_result_normal.jpg)
-
-单图识别结果页，展示检测框标注、车牌区域高亮裁剪、识别出的车牌号码、车型分类、颜色识别结果，并显示"车辆信息正常"的绿色判定提示。
-
-### 4. 套牌判定结果
-
-![套牌结果](screenshots/04_result_fake.jpg)
-
-套牌风险判定界面，当识别出的车牌号在数据库中存在备案记录，但识别出的品牌与备案品牌不一致时，系统输出"疑似套牌"的红色警告，并给出详细的风险说明与备案信息对比。
-
-### 5. 历史记录界面
-
-![历史记录](screenshots/06_history.jpg)
-
-识别记录列表页，支持分页查询、按车牌号/日期筛选，展示历次识别的车牌、车型、颜色、品牌、判定结果与时间戳，支持点击查看详情与删除记录。
-
-### 6. 车辆库管理界面
-
-![车辆库](screenshots/07_database.jpg)
-
-备案车辆信息的数据库管理页，展示已登记车辆的车牌号、车主、车型、颜色、品牌等字段，支持分页浏览与关键词检索。
-
-### 7. 新增车辆界面
-
-![新增车辆](screenshots/08_add_vehicle.jpg)
-
-车辆备案信息录入表单，提供车牌号、车主姓名、车型、颜色、品牌等字段的输入与下拉选择，用于向数据库新增合法车辆备案。
-
-### 8. 反馈闭环界面
-
-![反馈闭环](screenshots/09_feedback.jpg)
-
-用户反馈提交页，当系统识别结果存在偏差时，用户可上传原图、选择错误类型（车牌/车型/颜色/品牌/套牌判定）并填写补充说明，反馈数据将存入 `data/feedback_images/` 用于后续模型迭代优化。
-
----
-
-## 附：项目结构
-
-```
-.
-├── app.py                  # Flask 应用主入口
-├── config.py               # 配置管理
-├── database.py             # SQLite 数据库操作
-├── inference.py            # 模型推理封装
-├── color_classifier.py     # HSV 颜色分类算法
-├── improve_accuracy.py     # 图像增强与识别优化
-├── feedback_db.py          # 反馈数据管理
-├── train_all.py            # 模型训练脚本
-├── download_model.sh       # 模型权重一键下载脚本
-├── upload_release.py       # GitHub Release 自动上传脚本
-├── weights/                # 模型权重存放目录
-├── cfg/                    # 训练产出的模型权重
-├── data/                   # SQLite 数据库
-├── static/                 # CSS/JS/图片资源
-├── templates/              # HTML 模板
-└── datasets/               # 训练数据集
-```
-
-## 许可证
-
-MIT
-
----
-
 # Fake Plate Vehicle Detection System (Web) V1.0
 
 ## 1. Project Introduction
 
-This project is a deep learning-based web system for detecting fake/counterfeit license plate vehicles. It integrates vehicle detection, license plate localization, character recognition, vehicle type classification, color recognition, and information comparison logic to achieve intelligent vehicle license plate recognition and fake plate anomaly detection. Users can upload vehicle images through the web interface; the system automatically performs vehicle localization, license plate extraction, character recognition, vehicle type and color classification, and finally compares the results with the registered database to output recognition results and fake plate risk assessments. The project features complete frontend interaction and backend inference capabilities.
+This project is a deep learning-based web system for detecting fake/counterfeit license plate vehicles, integrating vehicle detection, license plate localization, character recognition, vehicle type classification, color recognition, and information comparison logic to achieve intelligent vehicle license plate recognition and fake plate anomaly detection. Users can upload vehicle images through the web interface; the system automatically performs vehicle localization, license plate extraction, character recognition, vehicle type and color classification, and finally compares the results with the registered database to output recognition results and fake plate risk assessment. The project features complete frontend interaction and backend inference capabilities, independently developed from algorithm integration, model training, API development to web visualization deployment.
 
 ## 2. Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript for page layout, image upload, result display, history query, and vehicle database management.
-- **Backend**: Python (Flask) for RESTful service interfaces, handling frontend requests, calling recognition algorithms, and database operations.
+- **Frontend**: HTML, CSS, JavaScript, implementing page layout, image upload, result display, history query, vehicle database management, and other interactive features.
+- **Backend**: Python (Flask), building RESTful service interfaces, handling frontend requests, calling recognition algorithms, executing business logic and database operations.
 - **Core Algorithms**:
-  - YOLO-based vehicle detection for precise localization of vehicles and license plates.
-  - HyperLPR + multi-level image enhancement for license plate OCR.
-  - MiniVGGNet-based vehicle type (4 classes) and color (8 colors) classification.
-  - HSV color space-based intelligent color classification optimization.
-- **Database**: SQLite for persistent storage of vehicle registration info, recognition history, and feedback data.
-- **Deployment**: Local server deployment (Docker supported).
+  - YOLO-based vehicle detection algorithm for precise localization of vehicles and license plate regions;
+  - HyperLPR + multi-level image enhancement strategy for license plate OCR character recognition;
+  - MiniVGGNet-based vehicle type (4 classes) and color (8 colors) classification algorithm;
+  - HSV color space-based intelligent color classification optimization algorithm.
+- **Database**: SQLite, persistently storing vehicle registration information, recognition history, and feedback data.
+- **Deployment**: Local server deployment (Docker containerization supported), achieving frontend-backend integration and real-time recognition inference.
 
-## 3. Core Features
+## 3. Core Feature Modules
 
-- Image upload and preview
-- Vehicle and license plate detection and localization
-- License plate OCR recognition
-- Vehicle type and color classification
-- Fake plate detection and risk warning
-- Result visualization
-- History record management
-- Vehicle database CRUD and CSV batch import
-- Batch analysis for multiple images
+- **Image Upload and Preview Module**: Supports local vehicle image upload, frontend real-time preview, format and size validation.
+- **Vehicle Detection and Localization Module**: Precisely locates vehicles and license plate regions in images, completes license plate correction and cropping.
+- **License Plate Character Recognition Module**: Performs OCR recognition on cropped license plate regions, outputs complete license plate numbers.
+- **Vehicle Type and Color Classification Module**: Intelligently classifies detected vehicles by type (sedan/bus/minivan/truck) and color (black/blue/brown/green/red/silver/white/yellow).
+- **Fake Plate Detection Module**: Compares recognized license plate information with the registered database to determine if the vehicle has fake plate anomalies, outputs risk warnings.
+- **Result Visualization Module**: Web interface displays original images, detection box annotations, license plate regions, recognized numbers, vehicle type and color, judgment results with clear and intuitive interaction.
+- **History Record Management Module**: Supports paginated query of recognition records, statistical analysis, and persistent storage.
+- **Vehicle Database Management Module**: Supports CRUD operations for vehicle registration information and CSV batch import.
+- **Batch Analysis Module**: Supports simultaneous upload of multiple images for batch fake plate detection.
 
-## 4. Environment & Usage
+## 4. Runtime Environment and Usage Instructions
 
-### Requirements
+### Runtime Environment
 
-- Python 3.8+
-- Windows / macOS / Linux
-- CPU inference supported, NVIDIA GPU recommended
+- Python 3.8 and above
+- Windows / macOS / Linux systems
+- CPU inference supported, NVIDIA GPU acceleration recommended
 
-### Install Dependencies
+### Dependency Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Model Download (Required for First Run)
+### Model Download (Required for First Use)
 
-Model weight files (~200MB) are not included in the source repository. Download before first run:
+Model weight files (~200MB) are not included in the source repository and must be downloaded before first run:
 
 **Option 1: One-click Script (Recommended)**
 
@@ -281,25 +60,25 @@ python download_models.py
 
 Download the following files from [GitHub Release v1.0.0](https://github.com/WangYuning111/Find-Fake-Plate-Vehicle-web/releases/tag/v1.0.0) to the `weights/` directory:
 
-| File | Description | Size |
-|------|-------------|------|
+| File Name | Description | Size |
+|-----------|-------------|------|
 | `best.pt` | YOLO vehicle detection model | ~15MB |
-| `vehicle_type.pth` | Vehicle type model (4 classes) | ~80MB |
-| `vehicle_color.pth` | Vehicle color model (8 colors) | ~80MB |
-| `vehicle_brand_resnet18.pth` | Vehicle brand model (26 brands) | ~44MB |
+| `vehicle_type.pth` | Vehicle type classification model (4 classes) | ~80MB |
+| `vehicle_color.pth` | Vehicle color classification model (8 colors) | ~80MB |
+| `vehicle_brand_resnet18.pth` | Vehicle brand classification model (26 brands) | ~44MB |
 
-> If model files already exist locally under `cfg/`, copy them to `weights/`:
+> If trained model files already exist locally, they can be directly copied from the `cfg/` directory to `weights/`:
 > ```bash
 > cp cfg/*.pth cfg/*.pt weights/
 > ```
 
-### Start Server
+### Startup Method
 
 ```bash
 python app.py
 ```
 
-Visit http://localhost:8090 to upload images for fake plate detection.
+Visit http://localhost:8090 to upload images for fake plate vehicle detection testing.
 
 ### Docker Deployment (Optional)
 
@@ -307,65 +86,132 @@ Visit http://localhost:8090 to upload images for fake plate detection.
 docker-compose up -d
 ```
 
-## 5. Development Team
+### Model Notes
 
-### Lead Developer: Wang Yuning
+The algorithm inference code of this project is independently integrated and optimized. Pre-trained weight files are only used for model inference and are not included in the source code copyright registration scope. They can be downloaded or retrained during runtime.
 
-- Overall system architecture and planning
-- Backend Flask service, RESTful API, and frontend-backend integration
-- YOLO vehicle detection and HyperLPR OCR integration
-- MiniVGGNet model training, data augmentation, and optimization
-- Fake plate detection core logic and brand database comparison
-- HSV color classification optimization
-- SQLite database design and feedback loop system
+## 5. Project Development Division (Two-Person Collaboration)
 
-### Co-Developer: Su Puhang
+### Lead Developer: Wang Yuning (Core Development Lead)
 
-- Frontend page layout, CSS styling, and JavaScript interaction
-- Image upload, preview, result display, and history pagination
-- Vehicle image data collection, organization, and annotation
-- AI model training data preprocessing and dataset splitting
-- Functional testing, bug fixing, and compatibility adjustments
-- Project documentation, screenshots, and operation instructions
+- Responsible for overall project requirement analysis, system architecture design, and overall function planning;
+- Completed backend service setup (Flask), RESTful API interface development, frontend-backend integration logic;
+- Responsible for integration, code adaptation, and inference logic optimization of YOLO vehicle detection algorithm and HyperLPR license plate OCR recognition algorithm;
+- Responsible for MiniVGGNet vehicle type/color classification model training strategy design, data augmentation, label smoothing, and model tuning;
+- Independently wrote the core fake plate detection business logic (license plate-brand database comparison, anomaly recognition rule design);
+- Responsible for optimization and accuracy improvement of HSV color space color classification algorithm;
+- Responsible for overall project debugging, feature iteration, code optimization, and version integration;
+- Responsible for SQLite database design, vehicle database management, history records, and feedback loop system development.
 
-## 6. Project Structure
+### Co-Developer: Su Puhang (Collaborative Auxiliary Development)
+
+- Responsible for frontend page layout design, CSS styling, and JavaScript interactive feature development;
+- Implemented frontend interactive modules such as image upload, preview, result echo, and history pagination;
+- Responsible for vehicle image data collection, organization, and data annotation;
+- Responsible for AI model training data preprocessing, dataset splitting, and training assistance;
+- Assisted in project functional testing, BUG troubleshooting, adaptation optimization, and compatibility adjustments;
+- Organized project materials, runtime screenshots, project documentation, and operation instructions.
+
+## 6. Project Iteration Records
+
+The project adopts phased iterative development, completing function updates through multiple Git commits, with complete independent development traces:
+
+1. **Project Initialization**: Set up Flask project skeleton, configured directory structure, initialized Git repository;
+2. **Frontend Page Setup**: Completed basic HTML/CSS/JS development for homepage, upload page, and result display page;
+3. **Backend Interface Development**: Implemented core APIs for image upload, vehicle detection, license plate recognition;
+4. **Algorithm Module Integration**: Integrated YOLO vehicle detection, HyperLPR license plate OCR, vehicle type/color classification models;
+5. **Fake Plate Logic Development**: Implemented license plate-brand database comparison, anomaly judgment rules, and risk warnings;
+6. **Data Management Development**: Implemented SQLite database, vehicle database CRUD, history record query;
+7. **UI Beautification and Interaction Optimization**: Frontend style iteration, responsive adaptation, result visualization enhancement;
+8. **Algorithm Accuracy Optimization**: HSV color threshold tuning, brand alias mapping, low confidence tolerance mechanism;
+9. **Training Pipeline Construction**: Completed data augmentation, label smoothing, learning rate scheduling, and early stopping strategy;
+10. **Model Management and Release**: Model weight Git separation, Release attachment publishing, one-click download script;
+11. **BUG Fixes and Stability**: Fixed black vehicle misclassification, brand false positives, rotated image recognition issues, stable version release;
+12. **Brand Label Cleaning (Round 1)**: Systematically reviewed samples marked as "Others" in `brand_labels.csv`, manually reviewed images and corrected 9 wrong annotations (FAW, Jinbei, Foton, Volkswagen, Great Wall, JMC, Toyota, etc.), "Others" ratio decreased from 30.4% to 26.3%;
+13. **Brand Label Cleaning (Round 2)**: Continued cleaning "Others" labels, corrected 11 image brands (FAW, JMC, Changan, Zhonghua, Chery, Citroen, Hyundai, Jinbei, Volkswagen, etc.), solved extreme category imbalance (Volkswagen 124 vs Honda 11 vs BMW 2);
+14. **Brand Label Cleaning (Round 3)**: Added corrections for 5 images (Honda, Volkswagen, Toyota, etc.), further expanded training data for few-sample brands, "Others" ratio decreased to ~24.3%;
+15. **Brand Model Iterative Retraining**: Based on cleaned annotation data, performed multi-round iterative training on ResNet18 brand classification model (30 epochs, learning rate scheduling + early stopping strategy), enabling the model to learn the corrected label distribution;
+16. **Brand Confidence Threshold Optimization**: Lowered the brand recognition output threshold in `inference.py` from 0.30 to 0.15, avoiding forcing correctable recognition results to "Unknown" due to low confidence;
+17. **Fake Plate Judgment Logic Fix**: Removed the tolerance skip logic `detected_brand_conf < 0.65` in `database.py`, changed to judging suspected fake plate as long as the database registered brand and recognized brand do not match, eliminating the "the less accurate the brand → the less likely to be judged as fake" dead loop;
+18. **Few-Sample Brand Governance**: For low-frequency brands such as Honda, BMW, Zhonghua with insufficient samples causing low recognition rates, continuously mined and supplemented positive sample annotations from the "Others" category, optimizing the model's discrimination ability for low-frequency brands;
+19. **Brand Label Cleaning (Round 4~10) and Final Model Training**: Continued multi-round cleaning of annotation data, accumulated corrections for ~200+ images, reduced "Others" ratio from 30% to ~21%, and completed final training and test verification of brand classification model based on 295 cleaned annotation data;
+20. **Brand Label Deep Cleaning and Batch Auto-Annotation**: Continued manual image review and correction for rounds 11~13 totaling 88 images, and based on current model high confidence batch auto-annotated 253 "Others" samples (confidence >= 0.80), "Others" ratio decreased to ~21.4% (from initial 63.5% to 21.4% among all 809 images), annotated samples increased to 636, training validation accuracy reached 89.7%, 10-round random test average correct rate 98.0%.
+
+## 7. Project Display Screenshots
+
+The following are actual system runtime screenshots, stored in the `screenshots/` directory:
+
+### 1. Project Homepage
+
+![Project Homepage](screenshots/01_home.jpg)
+
+System main interface, displaying function entry, system introduction, and statistical information overview. Users can quickly access single image recognition, batch recognition, history records, and vehicle database management modules.
+
+### 2. Image Upload Interface
+
+![Image Upload](screenshots/02_upload.jpg)
+
+Upload and preview effect after user selects vehicle images, supports drag-and-drop upload, displays thumbnail of the image to be detected, and provides a "Start Recognition" button to trigger the subsequent inference process.
+
+### 3. Normal License Plate Recognition Result
+
+![Normal Result](screenshots/03_result_normal.jpg)
+
+Single image recognition result page, displaying detection box annotation, highlighted license plate region crop, recognized license plate number, vehicle type classification, color recognition result, and showing a green "Vehicle Information Normal" judgment prompt.
+
+### 4. Fake Plate Judgment Result
+
+![Fake Plate Result](screenshots/04_result_fake.jpg)
+
+Fake plate risk judgment interface. When the recognized license plate number exists in the database with a registration record, but the recognized brand is inconsistent with the registered brand, the system outputs a red "Suspected Fake Plate" warning and provides detailed risk explanation and registered information comparison.
+
+### 5. History Records Interface
+
+![History Records](screenshots/06_history.jpg)
+
+Recognition record list page, supports paginated query, filtering by license plate number/date, displaying license plate, vehicle type, color, brand, judgment result, and timestamp for each recognition, supports clicking to view details and delete records.
+
+### 6. Vehicle Database Management Interface
+
+![Vehicle Database](screenshots/07_database.jpg)
+
+Registered vehicle information database management page, displaying fields such as license plate number, owner, vehicle type, color, and brand for registered vehicles, supports paginated browsing and keyword search.
+
+### 7. Add Vehicle Interface
+
+![Add Vehicle](screenshots/08_add_vehicle.jpg)
+
+Vehicle registration information entry form, providing input and dropdown selection for fields such as license plate number, owner name, vehicle type, color, and brand, used to add new legal vehicle registrations to the database.
+
+### 8. Feedback Loop Interface
+
+![Feedback Loop](screenshots/09_feedback.jpg)
+
+User feedback submission page. When system recognition results have deviations, users can upload the original image, select error type (license plate/vehicle type/color/brand/fake plate judgment), and fill in supplementary descriptions. Feedback data will be stored in `data/feedback_images/` for subsequent model iteration optimization.
+
+---
+
+## Appendix: Project Structure
 
 ```
 .
-├── app.py                  # Flask app entry
+├── app.py                  # Flask application main entry
 ├── config.py               # Configuration management
 ├── database.py             # SQLite database operations
 ├── inference.py            # Model inference wrapper
-├── color_classifier.py     # HSV color classification
-├── improve_accuracy.py     # Image enhancement and optimization
+├── color_classifier.py     # HSV color classification algorithm
+├── improve_accuracy.py     # Image enhancement and recognition optimization
 ├── feedback_db.py          # Feedback data management
 ├── train_all.py            # Model training script
-├── download_model.sh       # One-click model download
+├── download_model.sh       # One-click model weight download script
 ├── upload_release.py       # GitHub Release auto-upload script
-├── weights/                # Model weight directory
-├── cfg/                    # Trained model weights backup
+├── weights/                # Model weight storage directory
+├── cfg/                    # Training output model weights
 ├── data/                   # SQLite database
-├── static/                 # CSS/JS/image assets
+├── static/                 # CSS/JS/image resources
 ├── templates/              # HTML templates
 └── datasets/               # Training datasets
 ```
-
-## 7. Iteration Highlights
-
-The project was developed through iterative phases with complete development traces via Git commits:
-
-1. Project initialization and Flask skeleton setup
-2. Frontend page development (upload, result display)
-3. Backend API for image upload, detection, and OCR
-4. Algorithm integration (YOLO, HyperLPR, type/color classification)
-5. Fake plate detection logic and brand database comparison
-6. SQLite database and vehicle library management
-7. UI optimization and responsive adaptation
-8. Algorithm accuracy optimization (HSV thresholds, brand alias mapping)
-9. Training pipeline construction (augmentation, label smoothing, early stopping)
-10. Model weight separation, Release publishing, and download scripts
-11. Bug fixes for black vehicle misclassification, brand false positives, etc.
-12. **Brand label cleaning (Round 1~13)**: Systematically reviewed and corrected ~200+ mislabeled samples, reducing "Others" ratio from 63.5% to ~21.4%. Final training validation accuracy reached 89.7%, with 98.0% average correct rate in 10 random tests.
 
 ## License
 
