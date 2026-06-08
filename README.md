@@ -44,17 +44,28 @@ pip install -r requirements.txt
 
 ### 模型下载（首次使用必需）
 
-模型权重文件（约 160MB）未纳入源代码仓库，首次运行前需下载：
+模型权重文件（约 200MB）未纳入源代码仓库，首次运行前需下载：
+
+**方式一：一键脚本（推荐）**
 
 ```bash
-# 方式一：一键脚本（推荐）
+# Linux / macOS / Git Bash
 bash download_model.sh
 
-# 方式二：手动下载（需安装 wget 或 curl）
-wget -P weights/ https://github.com/WangYuning111/Find-Fake-Plate-Vehicle-web2/releases/download/v1.0.0/best.pt
-wget -P weights/ https://github.com/WangYuning111/Find-Fake-Plate-Vehicle-web2/releases/download/v1.0.0/vehicle_type.pth
-wget -P weights/ https://github.com/WangYuning111/Find-Fake-Plate-Vehicle-web2/releases/download/v1.0.0/vehicle_color.pth
+# Windows
+python download_models.py
 ```
+
+**方式二：手动下载**
+
+从 [GitHub Release v1.0.0](https://github.com/WangYuning111/Find-Fake-Plate-Vehicle-web/releases/download/v1.0.0/) 下载以下文件到 `weights/` 目录：
+
+| 文件名 | 说明 | 大小 |
+|--------|------|------|
+| `best.pt` | YOLO 车辆检测模型 | ~15MB |
+| `vehicle_type.pth` | 车型分类模型 (4类) | ~80MB |
+| `vehicle_color.pth` | 颜色分类模型 (8色) | ~80MB |
+| `vehicle_brand_resnet18.pth` | 品牌分类模型 (26品牌) | ~44MB |
 
 > 若本地已存在训练好的模型文件，可直接从 `cfg/` 目录复制到 `weights/`：
 > ```bash
