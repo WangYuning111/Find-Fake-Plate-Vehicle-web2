@@ -15,26 +15,35 @@ import sys
 import argparse
 import requests
 
-REPO = "WangYuning111/Find-Fake-Plate-Vehicle-web2"
+REPO = "WangYuning111/Find-Fake-Plate-Vehicle-web"
 RELEASE_TAG = "v1.0.0"
 RELEASE_NAME = "v1.0.0 模型权重"
 RELEASE_BODY = """模型权重文件（首次运行必需）
 
 包含:
 - best.pt — YOLO 车辆检测模型
-- vehicle_type.pth — 车型分类模型
-- vehicle_color.pth — 颜色分类模型
+- vehicle_type.pth — 车型分类模型 (MiniVGGNet, 4类)
+- vehicle_color.pth — 颜色分类模型 (MiniVGGNet, 8色)
+- vehicle_brand_resnet18.pth — 品牌分类模型 (ResNet18, 26品牌)
 
 下载方式:
 ```bash
+# Linux / macOS / Git Bash
 bash download_model.sh
+
+# Windows
+python download_models.py
 ```
+
+> 注意：模型权重文件较大，未纳入源代码仓库，请从本 Release 下载。
+> 数据集图片请从网盘或另行获取，也不在仓库中。
 """
 
 MODELS = [
     ("weights/best.pt", "best.pt"),
     ("weights/vehicle_type.pth", "vehicle_type.pth"),
     ("weights/vehicle_color.pth", "vehicle_color.pth"),
+    ("cfg/vehicle_brand_resnet18.pth", "vehicle_brand_resnet18.pth"),
 ]
 
 

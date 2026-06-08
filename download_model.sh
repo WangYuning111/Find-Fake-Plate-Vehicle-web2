@@ -35,10 +35,11 @@ MODELS=(
     "best.pt"
     "vehicle_type.pth"
     "vehicle_color.pth"
+    "vehicle_brand_resnet18.pth"
 )
 
 # GitHub Release 直链（创建 Release 后自动生效）
-BASE_URL="https://github.com/WangYuning111/Find-Fake-Plate-Vehicle-web2/releases/download/v1.0.0"
+BASE_URL="https://github.com/WangYuning111/Find-Fake-Plate-Vehicle-web/releases/download/v1.0.0"
 
 all_ok=true
 for model in "${MODELS[@]}"; do
